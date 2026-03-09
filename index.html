@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <meta name="description" content="A creative developer portfolio showcasing projects, skills, and experience.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="100">
+
+    <!-- ========== CURSOR GLOW ========== -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#hero">
+                <span class="brand-icon">&lt;/&gt;</span>
+                <span class="brand-text">Portfolio</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent"
+                aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certificates">Certificates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <a href="#contact" class="btn btn-glow ms-lg-3">Hire Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section id="hero" class="hero-section d-flex align-items-center">
+        <div class="hero-particles" id="heroParticles"></div>
+        <div class="hero-grid-bg"></div>
+        <div class="container position-relative">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <p class="hero-greeting animate-on-scroll">
+                        <span class="greeting-line"></span>
+                        Hello, I'm
+                    </p>
+                    <h1 class="hero-title animate-on-scroll">
+                        <span class="gradient-text">Afzal</span>
+                        <span class="gradient-text-secondary">Khan</span>
+                    </h1>
+                    <div class="hero-typewriter animate-on-scroll">
+                        <span class="typewriter-prefix">I'm a&nbsp;</span>
+                        <span class="typewriter-text" id="typewriterText"></span>
+                        <span class="typewriter-cursor">|</span>
+                    </div>
+                    <p class="hero-description animate-on-scroll">
+                        Crafting elegant digital experiences with clean code and creative design.
+                        Passionate about building products that make a difference.
+                    </p>
+
+                </div>
+                <div class="col-lg-5 d-none d-lg-flex justify-content-center">
+                    <div class="hero-avatar-wrapper animate-on-scroll">
+                        <div class="hero-avatar-ring"></div>
+                        <div class="hero-avatar-ring ring-2"></div>
+                        <div class="hero-avatar">
+                            <img src="media/afzal.png" alt="Profile Photo" class="avatar-image">
+                        </div>
+                        <div class="floating-badge badge-1">
+                            <i class="bi bi-code-slash"></i>
+                        </div>
+                        <div class="floating-badge badge-2">
+                            <i class="bi bi-palette"></i>
+                        </div>
+                        <div class="floating-badge badge-3">
+                            <i class="bi bi-rocket-takeoff"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TECH STACK TICKER ========== -->
+    <div class="hero-tech-ticker">
+        <div class="ticker-track">
+            <div class="ticker-content">
+                <span class="ticker-item"><i class="bi bi-filetype-js"></i>JavaScript</span>
+                <span class="ticker-item"><i class="bi bi-filetype-tsx"></i>React</span>
+                <span class="ticker-item"><i class="bi bi-node-plus"></i>Node.js</span>
+                <span class="ticker-item"><i class="bi bi-filetype-py"></i>Python</span>
+                <span class="ticker-item"><i class="bi bi-database"></i>MongoDB</span>
+                <span class="ticker-item"><i class="bi bi-git"></i>Git</span>
+                <span class="ticker-item"><i class="bi bi-filetype-css"></i>Tailwind</span>
+                <span class="ticker-item"><i class="bi bi-cloud"></i>AWS</span>
+                <span class="ticker-item"><i class="bi bi-braces"></i>TypeScript</span>
+                <span class="ticker-item"><i class="bi bi-bezier2"></i>Figma</span>
+                <span class="ticker-item"><i class="bi bi-hdd-stack"></i>Docker</span>
+                <span class="ticker-item"><i class="bi bi-diagram-3"></i>GraphQL</span>
+            </div>
+            <div class="ticker-content" aria-hidden="true">
+                <span class="ticker-item"><i class="bi bi-filetype-js"></i>JavaScript</span>
+                <span class="ticker-item"><i class="bi bi-filetype-tsx"></i>React</span>
+                <span class="ticker-item"><i class="bi bi-node-plus"></i>Node.js</span>
+                <span class="ticker-item"><i class="bi bi-filetype-py"></i>Python</span>
+                <span class="ticker-item"><i class="bi bi-database"></i>MongoDB</span>
+                <span class="ticker-item"><i class="bi bi-git"></i>Git</span>
+                <span class="ticker-item"><i class="bi bi-filetype-css"></i>Tailwind</span>
+                <span class="ticker-item"><i class="bi bi-cloud"></i>AWS</span>
+                <span class="ticker-item"><i class="bi bi-braces"></i>TypeScript</span>
+                <span class="ticker-item"><i class="bi bi-bezier2"></i>Figma</span>
+                <span class="ticker-item"><i class="bi bi-hdd-stack"></i>Docker</span>
+                <span class="ticker-item"><i class="bi bi-diagram-3"></i>GraphQL</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section id="about" class="section-padding about-section-enhanced">
+        <div class="about-bg-shapes">
+            <div class="about-shape about-shape-1"></div>
+            <div class="about-shape about-shape-2"></div>
+        </div>
+        <div class="container">
+            <div class="section-header text-center animate-on-scroll">
+                <span class="section-tag"><i class="bi bi-person-lines-fill me-2"></i>About Me</span>
+                <h2 class="section-title">Discover My <span class="gradient-text">Story</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="row g-5 align-items-center mt-5">
+                <!-- Left Column: Image + Highlights -->
+                <div class="col-lg-5 animate-on-scroll">
+                    <div class="about-visual-stack">
+                        <!-- Profile Image Card -->
+                        <div class="about-profile-card">
+                            <div class="about-profile-glow"></div>
+                            <div class="about-profile-img-wrap">
+                                <img src="media/afzal.png" alt="Profile Photo" class="about-profile-img">
+                            </div>
+                            <div class="about-profile-overlay">
+                                <span class="about-profile-name">Afzal Khan</span>
+                                <span class="about-profile-role">MERN Stack Developer</span>
+                            </div>
+                        </div>
+
+
+                        <!-- Decorative Code Snippet -->
+                        <div class="about-code-block">
+                            <div class="code-header">
+                                <span class="code-dot" style="background:#ff5f57;"></span>
+                                <span class="code-dot" style="background:#febc2e;"></span>
+                                <span class="code-dot" style="background:#28c840;"></span>
+                                <span class="code-filename">about.js</span>
+                            </div>
+                            <pre class="code-body"><code><span class="code-kw">const</span> <span class="code-var">developer</span> = {
+  <span class="code-prop">name</span>: <span class="code-str">"Afzal Khan"</span>,
+  <span class="code-prop">skills</span>: [<span class="code-str">"MERN"</span>, <span class="code-str">"ML"</span>, <span class="code-str">"Python"</span>],
+  <span class="code-prop">passion</span>: <span class="code-str">"Building great Products"</span>,
+  <span class="code-prop">available</span>: <span class="code-bool">true</span>
+};</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Content -->
+                <div class="col-lg-7 animate-on-scroll">
+                    <div class="about-content-enhanced">
+                        <div class="about-intro-badge">
+                            <span class="intro-line"></span>
+                            <span>Who I Am</span>
+                        </div>
+                        <h3 class="about-subtitle-enhanced">
+                            MERN Developer &
+                            <span class="gradient-text">AI/ML Enthusiast</span>
+                        </h3>
+                        <p class="about-text-enhanced">
+                            I'm a passionate MERN Developer with over 3 years of experience creating beautiful,
+                            functional, and user-centered digital experiences. I enjoy turning complex problems
+                            into simple, intuitive designs.
+                        </p>
+                        <p class="about-text-enhanced">
+                            My journey in development started with a curiosity about how things work on the web.
+                            Since then, I've honed my skills across the full stack — from crafting pixel-perfect
+                            frontends to building robust backend architectures.
+                        </p>
+
+                        <!-- Info Cards Grid -->
+                        <div class="about-info-cards">
+                            <div class="about-info-card-item">
+                                <div class="info-card-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                                <div>
+                                    <span class="info-card-label">Location</span>
+                                    <span class="info-card-value">Rajasthan, India</span>
+                                </div>
+                            </div>
+                            <div class="about-info-card-item">
+                                <div class="info-card-icon" style="--ic-color: #00d4aa;"><i
+                                        class="bi bi-mortarboard-fill"></i></div>
+                                <div>
+                                    <span class="info-card-label">Degree</span>
+                                    <span class="info-card-value">B.Tech CSE</span>
+                                </div>
+                            </div>
+                            <div class="about-info-card-item">
+                                <div class="info-card-icon" style="--ic-color: #ff6b6b;"><i
+                                        class="bi bi-envelope-fill"></i></div>
+                                <div>
+                                    <span class="info-card-label">Email</span>
+                                    <span class="info-card-value">ak@gmail.com</span>
+                                </div>
+                            </div>
+                            <div class="about-info-card-item">
+                                <div class="info-card-icon" style="--ic-color: #28c840;"><i
+                                        class="bi bi-briefcase-fill"></i></div>
+                                <div>
+                                    <span class="info-card-label">Status</span>
+                                    <span class="info-card-value available">Available for hire</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CTA Buttons -->
+                        <div class="about-cta-group">
+                            <a href="media/AFZAL.pdf" download="Afzal_Khan_Resume.pdf" class="btn btn-glow"
+                                target="_blank">
+                                <i class="bi bi-download me-2"></i>Download Resume
+                            </a>
+                            <a href="#contact" class="btn btn-outline-glow">
+                                <i class="bi bi-chat-dots me-2"></i>Let's Talk
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== STATS SECTION ========== -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card animate-on-scroll">
+                    <div class="stat-icon stat-icon-purple"><i class="bi bi-folder-check"></i></div>
+                    <h3 class="stat-number" data-count="20">0</h3>
+                    <p class="stat-label">Projects Completed</p>
+                </div>
+                <div class="stat-card animate-on-scroll">
+                    <div class="stat-icon stat-icon-teal"><i class="bi bi-people-fill"></i></div>
+                    <h3 class="stat-number" data-count="17">0</h3>
+                    <p class="stat-label">Happy Clients</p>
+                </div>
+                <div class="stat-card animate-on-scroll">
+                    <div class="stat-icon stat-icon-coral"><i class="bi bi-cup-hot-fill"></i></div>
+                    <h3 class="stat-number" data-count="1200">0</h3>
+                    <p class="stat-label">Cups of Coffee</p>
+                </div>
+                <div class="stat-card animate-on-scroll">
+                    <div class="stat-icon stat-icon-gold"><i class="bi bi-award-fill"></i></div>
+                    <h3 class="stat-number" data-count="5">0</h3>
+                    <p class="stat-label">Awards Won</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SKILLS SECTION ========== -->
+    <section id="skills" class="section-padding skills-section-enhanced">
+        <div class="skills-bg-shapes">
+            <div class="skills-shape skills-shape-1"></div>
+            <div class="skills-shape skills-shape-2"></div>
+        </div>
+        <div class="container">
+            <div class="section-header text-center animate-on-scroll">
+                <span class="section-tag"><i class="bi bi-tools me-2"></i>My Skills</span>
+                <h2 class="section-title">Technologies I <span class="gradient-text">Master</span></h2>
+                <div class="section-divider"></div>
+                <p class="skills-section-desc mt-3">
+                    A curated toolkit of modern technologies I use to bring ideas to life —
+                    from pixel-perfect interfaces to powerful backend systems.
+                </p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="skills-filter text-center mt-5 animate-on-scroll">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="bi bi-grid-3x3-gap-fill me-1"></i>All
+                </button>
+                <button class="filter-btn" data-filter="frontend">
+                    <i class="bi bi-window-stack me-1"></i>Frontend
+                </button>
+                <button class="filter-btn" data-filter="backend">
+                    <i class="bi bi-server me-1"></i>Backend
+                </button>
+                <button class="filter-btn" data-filter="tools">
+                    <i class="bi bi-wrench-adjustable me-1"></i>Tools
+                </button>
+            </div>
+
+            <div class="skills-grid mt-5">
+                <!-- Frontend Skills -->
+                <div class="skill-card animate-on-scroll" data-category="frontend">
+                    <div class="skill-ring-wrapper">
+                        <svg class="skill-ring" viewBox="0 0 120 120">
+                            <circle class="skill-ring-bg" cx="60" cy="60" r="52"></circle>
+                            <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #E34F26;"
+                                data-percent="95"></circle>
+                        </svg>
+                        <div class="skill-ring-icon" style="--skill-color: #E34F26;">
+                            <i class="bi bi-filetype-html"></i>
+                        </div>
+                    </div>
+                    <h4 class="skill-name">HTML5</h4>
+                    <span class="skill-percent" style="--skill-color: #E34F26;">95%</span>
+                </div>
+                <div class="skill-card animate-on-scroll" data-category="frontend">
+                    <div class="skill-ring-wrapper">
+                        <svg class="skill-ring" viewBox="0 0 120 120">
+                            <circle class="skill-ring-bg" cx="60" cy="60" r="52"></circle>
+                            <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #1572B6;"
+                                data-percent="90"></circle>
+                        </svg>
+                        <div class="skill-ring-icon" style="--skill-color: #1572B6;">
+                            <i class="bi bi-filetype-css"></i>
+                        </div>
+                    </div>
+                    <h4 class="skill-name">CSS3</h4>
+                    <span class="skill-percent" style="--skill-color: #1572B6;">90%</span>
+                </div>
+                <div class="skill-card animate-on-scroll" data-category="frontend">
+                    <div class="skill-ring-wrapper">
+                        <svg class="skill-ring" viewBox="0 0 120 120">
+                            <circle class="skill-ring-bg" cx="60" cy="60" r="52"></circle>
+                            <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #F7DF1E;"
+                                data-percent="88"></circle>
+                        </svg>
+                        <div class="skill-ring-icon" style="--skill-color: #F7DF1E;">
+                            <i class="bi bi-filetype-js"></i>
+                        </div>
+                    </div>
+                    <h4 class="skill-name">JavaScript</h4>
+                    <span class="skill-percent" style="--skill-color: #F7DF1E;">88%</span>
+                </div>
+                <div class="skill-card animate-on-scroll" data-category="frontend">
+                    <div class="skill-ring-wrapper">
+                        <svg class="skill-ring" viewBox="0 0 120 120">
+                            <circle class="skill-ring-bg" cx="60" cy="60" r="52"></circle>
+                            <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #61DAFB;"
+                                data-percent="85"></circle>
+                        </svg>
+                        <div class="skill-ring-icon" style="--skill-color: #61DAFB;">
+                            <i class="bi bi-braces-asterisk"></i>
+                        </div>
+                    </div>
+                    <h4 class="skill-name">React</h4>
+                    <span class="skill-percent" style="--skill-color: #61DAFB;">85%</span>
+                </div>
+                <div class="skill-card animate-on-scroll" data-category="frontend">
+                    <div class="skill-ring-wrapper">
+                        <svg class="skill-ring" viewBox="0 0 120 120">
+                            <circle class="skill-ring-bg" cx="60" cy="60" r="52"></circle>
+                            <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #7952B3;"
+                                data-percent="92"></circle>
+                        </svg>
+                        <div class="skill-ring-icon" style="--skill-color: #7952B3;">
+                            <i class="bi bi-bootstrap-fill"></i>
+                        </div>
+                    </div>
+                    <h4 class="skill-name">Bootstrap</h4>
+                    <span class="skill-percent" style="--skill-color: #7952B3;">92%</span>
+                </div>
+                <div class="skill-card animate-on-scroll" data-category="frontend">
+                    <div class="skill-ring-wrapper">
+                        <svg class="skill-ring" viewBox="0 0 120 120">
+                            <circle class="skill-ring-bg" cx="60" cy="60" r="52"></circle>
+                            <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #3178C6;"
+                                data-percent="80"></circle>
+                        </svg>
+                        <div class="skill-ring-icon" style="--skill-color: #3178C6;">
+                            <i class="bi bi-filetype-tsx"></i>
+                        </div>
+                    </div>
+                    <h4 class="skill-name">TypeScript</h4>
+                    <span class="skill-percent" style="--skill-color: #3178C6;">80%</span>
+                </div>
+
+                <!-- Backend Skills -->
+                <div class="skill-card animate-on-scroll" data-category="backend">
+                    <div class="skill-ring-wrapper">
+                        <svg class="skill-ring" viewBox="0 0 120 120">
+                            <circle class="skill-ring-bg" cx="60" cy="60" r="52"></circle>
+                            <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #68A063;"
+                                data-percent="85"></circle>
+                        </svg>
+                        <div class="skill-ring-icon" style="--skill-color: #68A063;">
+                            <i class="bi bi-hdd-stack"></i>
+                        </div>
+                    </div>
+                    <h4 class="skill-name">Node.js</h4>
+                    <span class="skill-percent" style="--skill-color: #68A063;">85%</span>
+                </div>
+                <div class="skill-card animate-on-scroll" data-category="backend">
+                    <div class="skill-ring-wrapper">
+                        <svg class="skill-ring" viewBox="0 0 120 120">
+                            <circle class="skill-ring-bg" cx="60" cy="60" r="52"></circle>
+                            <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #336791;"
+                                data-percent="78"></circle>
+                        </svg>
+                        <div class="skill-ring-icon" style="--skill-color: #336791;">
+                            <i class="bi bi-database-fill"></i>
+                        </div>
+                    </div>
+                    <h4 class="skill-name">PostgreSQL</h4>
+                    <span class="skill-percent" style="--skill-color: #336791;">78%</span>
+                </div>
+                <div class="skill-card animate-on-scroll" data-category="backend">
+                    <div class="skill-ring-wrapper">
+                        <svg class="skill-ring" viewBox="0 0 120 120">
+                            <circle class="skill-ring-bg" cx="60" cy="60" r="52"></circle>
+                            <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #3776AB;"
+                                data-percent="82"></circle>
+                        </svg>
+                        <div class="skill-ring-icon" style="--skill-color: #3776AB;">
+                            <i class="bi bi-filetype-py"></i>
+                        </div>
+                    </div>
+                    <h4 class="skill-name">Python</h4>
+                    <span class="skill-percent" style="--skill-color: #3776AB;">82%</span>
+                </div>
+                <div class="skill-card animate-on-scroll" data-category="backend">
+                    <div class="skill-ring-wrapper">
+                        <svg class="skill-ring" viewBox="0 0 120 120">
+                            <circle class="skill-ring-bg" cx="60" cy="60" r="52"></circle>
+                            <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #47A248;"
+                                data-percent="75"></circle>
+                        </svg>
+                        <div class="skill-ring-icon" style="--skill-color: #47A248;">
+                            <i class="bi bi-database"></i>
+                        </div>
+                    </div>
+                    <h4 class="skill-name">MongoDB</h4>
+                    <span class="skill-percent" style="--skill-color: #47A248;">75%</span>
+                </div>
+
+                <!-- Tools -->
+                <div class="skill-card animate-on-scroll" data-category="tools">
+                    <div class="skill-ring-wrapper">
+                        <svg class="skill-ring" viewBox="0 0 120 120">
+                            <circle class="skill-ring-bg" cx="60" cy="60" r="52"></circle>
+                            <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #F05032;"
+                                data-percent="90"></circle>
+                        </svg>
+                        <div class="skill-ring-icon" style="--skill-color: #F05032;">
+                            <i class="bi bi-git"></i>
+                        </div>
+                    </div>
+                    <h4 class="skill-name">Git</h4>
+                    <span class="skill-percent" style="--skill-color: #F05032;">90%</span>
+                </div>
+                <div class="skill-card animate-on-scroll" data-category="tools">
+                    <div class="skill-ring-wrapper">
+                        <svg class="skill-ring" viewBox="0 0 120 120">
+                            <circle class="skill-ring-bg" cx="60" cy="60" r="52"></circle>
+                            <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #2496ED;"
+                                data-percent="72"></circle>
+                        </svg>
+                        <div class="skill-ring-icon" style="--skill-color: #2496ED;">
+                            <i class="bi bi-box-seam-fill"></i>
+                        </div>
+                    </div>
+                    <h4 class="skill-name">Docker</h4>
+                    <span class="skill-percent" style="--skill-color: #2496ED;">72%</span>
+                </div>
+                <div class="skill-card animate-on-scroll" data-category="tools">
+                    <div class="skill-ring-wrapper">
+                        <svg class="skill-ring" viewBox="0 0 120 120">
+                            <circle class="skill-ring-bg" cx="60" cy="60" r="52"></circle>
+                            <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #FF6F00;"
+                                data-percent="70"></circle>
+                        </svg>
+                        <div class="skill-ring-icon" style="--skill-color: #FF6F00;">
+                            <i class="bi bi-cloud-fill"></i>
+                        </div>
+                    </div>
+                    <h4 class="skill-name">AWS</h4>
+                    <span class="skill-percent" style="--skill-color: #FF6F00;">70%</span>
+                </div>
+                <div class="skill-card animate-on-scroll" data-category="tools">
+                    <div class="skill-ring-wrapper">
+                        <svg class="skill-ring" viewBox="0 0 120 120">
+                            <circle class="skill-ring-bg" cx="60" cy="60" r="52"></circle>
+                            <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #F24E1E;"
+                                data-percent="80"></circle>
+                        </svg>
+                        <div class="skill-ring-icon" style="--skill-color: #F24E1E;">
+                            <i class="bi bi-vector-pen"></i>
+                        </div>
+                    </div>
+                    <h4 class="skill-name">Figma</h4>
+                    <span class="skill-percent" style="--skill-color: #F24E1E;">80%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CERTIFICATES SECTION ========== -->
+    <section id="certificates" class="section-padding section-alt certificates-section-enhanced">
+        <div class="certificates-bg-shapes">
+            <div class="certificates-shape certificates-shape-1"></div>
+            <div class="certificates-shape certificates-shape-2"></div>
+        </div>
+        <div class="container">
+            <div class="section-header text-center animate-on-scroll">
+                <span class="section-tag"><i class="bi bi-award-fill me-2"></i>Certificates</span>
+                <h2 class="section-title">My <span class="gradient-text">Achievements</span></h2>
+                <div class="section-divider"></div>
+                <p class="certificates-section-desc mt-3">
+                    Professional certifications and courses I've completed to continuously improve my skills.
+                </p>
+            </div>
+
+            <div class="row g-4 mt-5" id="certificatesGrid">
+                <!-- Certificate 1 -->
+                <div class="col-lg-4 col-md-6 animate-on-scroll">
+                    <div class="certificate-card">
+                        <div class="certificate-card-glow"></div>
+                        <div class="certificate-icon" style="--cert-hue: 160;">
+                            <i class="bi bi-patch-check-fill"></i>
+                        </div>
+                        <div class="certificate-info">
+                            <h4 class="certificate-title">MongoDB & ICT Academy Skill-a-thon 2025</h4>
+                            <p class="certificate-issuer">MongoDB & ICT Academy</p>
+                            <div class="certificate-year"><i class="bi bi-calendar3 me-1"></i>2025</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Certificate 2 -->
+                <div class="col-lg-4 col-md-6 animate-on-scroll">
+                    <div class="certificate-card">
+                        <div class="certificate-card-glow"></div>
+                        <div class="certificate-icon" style="--cert-hue: 250;">
+                            <i class="bi bi-cloud-check-fill"></i>
+                        </div>
+                        <div class="certificate-info">
+                            <h4 class="certificate-title">NPTEL Cloud Computing certification</h4>
+                            <p class="certificate-issuer">IIT Kharagpur</p>
+                            <div class="certificate-year"><i class="bi bi-calendar3 me-1"></i>2024</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Certificate 3 -->
+                <div class="col-lg-4 col-md-6 animate-on-scroll">
+                    <div class="certificate-card">
+                        <div class="certificate-card-glow"></div>
+                        <div class="certificate-icon" style="--cert-hue: 15;">
+                            <i class="bi bi-github"></i>
+                        </div>
+                        <div class="certificate-info">
+                            <h4 class="certificate-title">Career Essentials in GitHub</h4>
+                            <p class="certificate-issuer">GitHub</p>
+                            <div class="certificate-year"><i class="bi bi-calendar3 me-1"></i>2024</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROJECTS SECTION ========== -->
+    <section id="projects" class="section-padding projects-section-enhanced">
+        <div class="projects-bg-shapes">
+            <div class="projects-shape projects-shape-1"></div>
+            <div class="projects-shape projects-shape-2"></div>
+        </div>
+        <div class="container">
+            <div class="section-header text-center animate-on-scroll">
+                <span class="section-tag"><i class="bi bi-collection-fill me-2"></i>My Work</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <div class="section-divider"></div>
+                <p class="projects-section-desc mt-3">
+                    Handpicked projects that showcase my passion for clean code,
+                    intuitive design, and solving real-world problems.
+                </p>
+            </div>
+
+            <!-- Project Filter -->
+            <div class="project-filter text-center mt-5 animate-on-scroll">
+                <button class="filter-btn active" data-project-filter="all">
+                    <i class="bi bi-grid-3x3-gap-fill me-1"></i>All
+                </button>
+                <button class="filter-btn" data-project-filter="web">
+                    <i class="bi bi-globe2 me-1"></i>Full Stack
+                </button>
+                <button class="filter-btn" data-project-filter="aiml">
+                    <i class="bi bi-robot me-1"></i>AI / ML
+                </button>
+                <button class="filter-btn" data-project-filter="design">
+                    <i class="bi bi-palette me-1"></i>Design
+                </button>
+            </div>
+
+            <div class="row g-4 mt-4" id="projectsGrid">
+                <!-- Project 1 — MERN Stack -->
+                <div class="col-lg-4 col-md-6 project-item animate-on-scroll" data-project-category="web">
+                    <div class="project-card">
+                        <div class="project-card-glow"></div>
+                        <div class="project-image">
+                            <div class="project-image-placeholder" style="--ph-hue: 250;">
+                                <i class="bi bi-code-slash"></i>
+                            </div>
+                            <div class="project-number">01</div>
+                            <div class="project-category-badge">MERN Stack</div>
+                            <div class="project-overlay">
+                                <a href="#" class="overlay-btn" title="Live Demo"><i
+                                        class="bi bi-box-arrow-up-right"></i></a>
+                                <a href="#" class="overlay-btn" title="Source Code"><i class="bi bi-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-info-top">
+                                <h4 class="project-title">CollabCode — Real-Time IDE</h4>
+                                <div class="project-status"><span class="status-dot live"></span>Live</div>
+                            </div>
+                            <p class="project-desc">A cloud-based collaborative code editor with live cursors,
+                                multi-language execution, and AI-assisted debugging — inspired by Replit & CodeSandbox.
+                            </p>
+                            <div class="project-tags">
+                                <span>React</span><span>Node.js</span><span>MongoDB</span><span>Socket.io</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 — Machine Learning -->
+                <div class="col-lg-4 col-md-6 project-item animate-on-scroll" data-project-category="aiml">
+                    <div class="project-card">
+                        <div class="project-card-glow"></div>
+                        <div class="project-image">
+                            <div class="project-image-placeholder" style="--ph-hue: 160;">
+                                <i class="bi bi-heart-pulse-fill"></i>
+                            </div>
+                            <div class="project-number">02</div>
+                            <div class="project-category-badge">Machine Learning</div>
+                            <div class="project-overlay">
+                                <a href="#" class="overlay-btn" title="Live Demo"><i
+                                        class="bi bi-box-arrow-up-right"></i></a>
+                                <a href="#" class="overlay-btn" title="Source Code"><i class="bi bi-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-info-top">
+                                <h4 class="project-title">VitalSense — Predictive Health</h4>
+                                <div class="project-status"><span class="status-dot live"></span>Live</div>
+                            </div>
+                            <p class="project-desc">Predictive health analytics platform using wearable sensor data to
+                                detect early signs of cardiac anomalies with 94% accuracy using LSTM + XGBoost.</p>
+                            <div class="project-tags">
+                                <span>Python</span><span>TensorFlow</span><span>Scikit-learn</span><span>Flask</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 — UI/UX Design -->
+                <div class="col-lg-4 col-md-6 project-item animate-on-scroll" data-project-category="design">
+                    <div class="project-card">
+                        <div class="project-card-glow"></div>
+                        <div class="project-image">
+                            <div class="project-image-placeholder" style="--ph-hue: 30;">
+                                <i class="bi bi-universal-access-circle"></i>
+                            </div>
+                            <div class="project-number">03</div>
+                            <div class="project-category-badge">UI/UX</div>
+                            <div class="project-overlay">
+                                <a href="#" class="overlay-btn" title="Live Demo"><i
+                                        class="bi bi-box-arrow-up-right"></i></a>
+                                <a href="#" class="overlay-btn" title="Source Code"><i class="bi bi-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-info-top">
+                                <h4 class="project-title">AccessFlow — Design System</h4>
+                                <div class="project-status"><span class="status-dot completed"></span>Done</div>
+                            </div>
+                            <p class="project-desc">An adaptive, accessibility-first design system with WCAG 2.2
+                                compliance, dynamic theming, and motion-safe components — inspired by Google Material 3.
+                            </p>
+                            <div class="project-tags">
+                                <span>Figma</span><span>React</span><span>Storybook</span><span>A11y</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4 — AI (RAG) -->
+                <div class="col-lg-4 col-md-6 project-item animate-on-scroll" data-project-category="aiml">
+                    <div class="project-card">
+                        <div class="project-card-glow"></div>
+                        <div class="project-image">
+                            <div class="project-image-placeholder" style="--ph-hue: 200;">
+                                <i class="bi bi-cpu-fill"></i>
+                            </div>
+                            <div class="project-number">04</div>
+                            <div class="project-category-badge">Artificial Intelligence</div>
+                            <div class="project-overlay">
+                                <a href="#" class="overlay-btn" title="Live Demo"><i
+                                        class="bi bi-box-arrow-up-right"></i></a>
+                                <a href="#" class="overlay-btn" title="Source Code"><i class="bi bi-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-info-top">
+                                <h4 class="project-title">NeuraBase — Multi-Modal RAG</h4>
+                                <div class="project-status"><span class="status-dot live"></span>Live</div>
+                            </div>
+                            <p class="project-desc">Enterprise knowledge base with multi-modal Retrieval-Augmented
+                                Generation — query PDFs, images & code with LLMs using vector embeddings & re-ranking.
+                            </p>
+                            <div class="project-tags">
+                                <span>LangChain</span><span>OpenAI</span><span>Pinecone</span><span>FastAPI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 5 — NLP -->
+                <div class="col-lg-4 col-md-6 project-item animate-on-scroll" data-project-category="aiml">
+                    <div class="project-card">
+                        <div class="project-card-glow"></div>
+                        <div class="project-image">
+                            <div class="project-image-placeholder" style="--ph-hue: 310;">
+                                <i class="bi bi-chat-left-text-fill"></i>
+                            </div>
+                            <div class="project-number">05</div>
+                            <div class="project-category-badge">NLP</div>
+                            <div class="project-overlay">
+                                <a href="#" class="overlay-btn" title="Live Demo"><i
+                                        class="bi bi-box-arrow-up-right"></i></a>
+                                <a href="#" class="overlay-btn" title="Source Code"><i class="bi bi-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-info-top">
+                                <h4 class="project-title">CodeLens — Review Copilot</h4>
+                                <div class="project-status"><span class="status-dot wip"></span>WIP</div>
+                            </div>
+                            <p class="project-desc">Multilingual code-review copilot that auto-generates PR summaries,
+                                detects anti-patterns, and suggests refactors using fine-tuned CodeLlama + BERT.</p>
+                            <div class="project-tags">
+                                <span>Transformers</span><span>PyTorch</span><span>HuggingFace</span><span>Docker</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 6 — Python Full Stack -->
+                <div class="col-lg-4 col-md-6 project-item animate-on-scroll" data-project-category="web">
+                    <div class="project-card">
+                        <div class="project-card-glow"></div>
+                        <div class="project-image">
+                            <div class="project-image-placeholder" style="--ph-hue: 120;">
+                                <i class="bi bi-graph-up-arrow"></i>
+                            </div>
+                            <div class="project-number">06</div>
+                            <div class="project-category-badge">Python Full Stack</div>
+                            <div class="project-overlay">
+                                <a href="#" class="overlay-btn" title="Live Demo"><i
+                                        class="bi bi-box-arrow-up-right"></i></a>
+                                <a href="#" class="overlay-btn" title="Source Code"><i class="bi bi-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-info-top">
+                                <h4 class="project-title">QuantFolio — Portfolio Optimizer</h4>
+                                <div class="project-status"><span class="status-dot live"></span>Live</div>
+                            </div>
+                            <p class="project-desc">AI-powered financial portfolio optimizer using Modern Portfolio
+                                Theory, Monte Carlo simulations, and sentiment analysis from real-time market feeds.</p>
+                            <div class="project-tags">
+                                <span>Django</span><span>PostgreSQL</span><span>Celery</span><span>React</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- ========== EXPERIENCE SECTION ========== -->
+    <section id="experience" class="section-padding section-alt experience-section-enhanced">
+        <div class="experience-bg-shapes">
+            <div class="experience-shape experience-shape-1"></div>
+            <div class="experience-shape experience-shape-2"></div>
+        </div>
+        <div class="container">
+            <div class="section-header text-center animate-on-scroll">
+                <span class="section-tag"><i class="bi bi-briefcase-fill me-2"></i>Experience</span>
+                <h2 class="section-title">My Internship <span class="gradient-text">Journey</span></h2>
+                <div class="section-divider"></div>
+                <p class="experience-section-desc mt-3">
+                    Hands-on experience across design, development, and AI —
+                    building real products with real impact.
+                </p>
+            </div>
+
+            <div class="timeline mt-5">
+                <!-- Internship 1 — UI/UX Designer -->
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot timeline-dot-coral">
+                        <div class="timeline-dot-ring"></div>
+                    </div>
+                    <div class="timeline-content timeline-card-coral">
+                        <div class="timeline-header">
+                            <span class="timeline-date"><i class="bi bi-calendar3 me-2"></i>Jun 2025 - Aug 2025</span>
+                            <span class="timeline-badge current">Recent</span>
+                        </div>
+                        <div class="timeline-body">
+                            <div class="timeline-company-logo"
+                                style="background: rgba(255, 107, 107, 0.12); color: #ff6b6b;">
+                                <i class="bi bi-palette-fill"></i>
+                            </div>
+                            <div class="timeline-details">
+                                <span class="timeline-type"><i class="bi bi-suitcase-lg me-1"></i>Internship</span>
+                                <h4 class="timeline-title">UI/UX Design Intern</h4>
+                                <h5 class="timeline-company">Designboat UI/UX School</h5>
+                                <p class="timeline-desc">Designed user flows, wireframes, and high-fidelity prototypes
+                                    for a SaaS analytics dashboard. Conducted usability testing with 50+ users,
+                                    improving task completion rate by 35%.</p>
+                                <div class="timeline-highlights">
+                                    <div class="timeline-highlight">
+                                        <span class="highlight-value">35%</span>
+                                        <span class="highlight-label">UX Improved</span>
+                                    </div>
+                                    <div class="timeline-highlight">
+                                        <span class="highlight-value">12</span>
+                                        <span class="highlight-label">Screens</span>
+                                    </div>
+                                    <div class="timeline-highlight">
+                                        <span class="highlight-value">50+</span>
+                                        <span class="highlight-label">Users Tested</span>
+                                    </div>
+                                </div>
+                                <div class="timeline-tags">
+                                    <span>Figma</span><span>Adobe XD</span><span>Prototyping</span><span>User
+                                        Research</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Internship 2 — MERN Stack Developer -->
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot timeline-dot-teal"></div>
+                    <div class="timeline-content timeline-card-teal">
+                        <div class="timeline-header">
+                            <span class="timeline-date"><i class="bi bi-calendar3 me-2"></i>Jan 2025 - Apr 2025</span>
+                        </div>
+                        <div class="timeline-body">
+                            <div class="timeline-company-logo"
+                                style="background: rgba(0, 212, 170, 0.12); color: #00d4aa;">
+                                <i class="bi bi-code-square"></i>
+                            </div>
+                            <div class="timeline-details">
+                                <span class="timeline-type"><i class="bi bi-suitcase-lg me-1"></i>Internship</span>
+                                <h4 class="timeline-title">MERN Stack Developer Intern</h4>
+                                <h5 class="timeline-company">Cuvette Tech</h5>
+                                <p class="timeline-desc">Built end-to-end features for a job portal platform — real-time
+                                    notifications via WebSockets, RESTful APIs with JWT auth, and a React admin
+                                    dashboard handling 10K+ daily active users.</p>
+                                <div class="timeline-highlights">
+                                    <div class="timeline-highlight">
+                                        <span class="highlight-value">10K+</span>
+                                        <span class="highlight-label">Daily Users</span>
+                                    </div>
+                                    <div class="timeline-highlight">
+                                        <span class="highlight-value">15</span>
+                                        <span class="highlight-label">APIs Built</span>
+                                    </div>
+                                </div>
+                                <div class="timeline-tags">
+                                    <span>React</span><span>Node.js</span><span>MongoDB</span><span>Express</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Internship 3 — AI/ML Intern -->
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot timeline-dot-purple"></div>
+                    <div class="timeline-content timeline-card-purple">
+                        <div class="timeline-header">
+                            <span class="timeline-date"><i class="bi bi-calendar3 me-2"></i>Jul 2024 - Dec 2024</span>
+                        </div>
+                        <div class="timeline-body">
+                            <div class="timeline-company-logo"
+                                style="background: rgba(108, 99, 255, 0.12); color: #6c63ff;">
+                                <i class="bi bi-cpu-fill"></i>
+                            </div>
+                            <div class="timeline-details">
+                                <span class="timeline-type"><i class="bi bi-suitcase-lg me-1"></i>Internship</span>
+                                <h4 class="timeline-title">AI/ML Research Intern</h4>
+                                <h5 class="timeline-company">IIT Research Lab</h5>
+                                <p class="timeline-desc">Developed a multi-modal sentiment analysis pipeline combining
+                                    NLP and computer vision. Fine-tuned BERT and ResNet models achieving 91% F1-score on
+                                    a custom dataset of 25K samples.</p>
+                                <div class="timeline-highlights">
+                                    <div class="timeline-highlight">
+                                        <span class="highlight-value">91%</span>
+                                        <span class="highlight-label">F1 Score</span>
+                                    </div>
+                                    <div class="timeline-highlight">
+                                        <span class="highlight-value">25K</span>
+                                        <span class="highlight-label">Dataset</span>
+                                    </div>
+                                </div>
+                                <div class="timeline-tags">
+                                    <span>PyTorch</span><span>Transformers</span><span>OpenCV</span><span>Python</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========== TESTIMONIALS SECTION ========== -->
+    <section class="section-padding testimonials-section-enhanced">
+        <div class="testimonials-bg-shapes">
+            <div class="testimonials-shape testimonials-shape-1"></div>
+            <div class="testimonials-shape testimonials-shape-2"></div>
+        </div>
+        <div class="container">
+            <div class="section-header text-center animate-on-scroll">
+                <span class="section-tag"><i class="bi bi-chat-quote-fill me-2"></i>Testimonials</span>
+                <h2 class="section-title">What Supervisors <span class="gradient-text">Say</span></h2>
+                <div class="section-divider"></div>
+                <p class="testimonials-section-desc mt-3">
+                    Real feedback from supervisors I've worked with during my internships.
+                </p>
+            </div>
+            <div class="testimonial-slider mt-5">
+                <div class="row g-4">
+
+                    <!-- Testimonial 1 — UI/UX Internship -->
+                    <div class="col-lg-4 animate-on-scroll">
+                        <div class="testimonial-card">
+                            <div class="testimonial-card-glow"></div>
+                            <div class="testimonial-quote-bg">"</div>
+                            <div class="testimonial-stars">
+                                <div class="stars-icons">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <span class="stars-score">5.0</span>
+                            </div>
+                            <p class="testimonial-text">
+                                "Afzal has a rare eye for detail in UI/UX. His prototypes for our SaaS dashboard were
+                                pixel-perfect, and the usability testing he led directly improved our user retention by
+                                35%. Truly impressive work."
+                            </p>
+                            <div class="testimonial-project-tag">
+                                <i class="bi bi-link-45deg me-1"></i>SaaS Dashboard Design
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-avatar" style="--avatar-hue: 350;">
+                                    <span class="author-initials">RS</span>
+                                </div>
+                                <div class="author-info">
+                                    <h5>Ritu Sharma</h5>
+                                    <p>Lead Mentor, Designboat</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 — MERN Internship (Featured) -->
+                    <div class="col-lg-4 animate-on-scroll">
+                        <div class="testimonial-card featured">
+                            <div class="testimonial-card-glow"></div>
+                            <div class="testimonial-featured-badge">
+                                <i class="bi bi-award-fill me-1"></i>Top Review
+                            </div>
+                            <div class="testimonial-quote-bg">"</div>
+                            <div class="testimonial-stars">
+                                <div class="stars-icons">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <span class="stars-score">5.0</span>
+                            </div>
+                            <p class="testimonial-text">
+                                "Afzal single-handedly built our real-time notification system and admin dashboard
+                                handling 10K+ users. His code quality, speed, and ownership mindset are on par with
+                                senior developers. A standout intern."
+                            </p>
+                            <div class="testimonial-project-tag">
+                                <i class="bi bi-link-45deg me-1"></i>Job Portal Platform
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-avatar" style="--avatar-hue: 160;">
+                                    <span class="author-initials">AV</span>
+                                </div>
+                                <div class="author-info">
+                                    <h5>Amit Verma</h5>
+                                    <p>Engineering Lead, Cuvette Tech</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 — AI/ML Internship -->
+                    <div class="col-lg-4 animate-on-scroll">
+                        <div class="testimonial-card">
+                            <div class="testimonial-card-glow"></div>
+                            <div class="testimonial-quote-bg">"</div>
+                            <div class="testimonial-stars">
+                                <div class="stars-icons">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </div>
+                                <span class="stars-score">4.8</span>
+                            </div>
+                            <p class="testimonial-text">
+                                "Afzal's multi-modal sentiment analysis pipeline was exceptional research work. He
+                                fine-tuned BERT and ResNet to achieve a 91% F1-score — results that contributed directly
+                                to our published paper. Highly recommended."
+                            </p>
+                            <div class="testimonial-project-tag">
+                                <i class="bi bi-link-45deg me-1"></i>Sentiment Analysis Research
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-avatar" style="--avatar-hue: 260;">
+                                    <span class="author-initials">DP</span>
+                                </div>
+                                <div class="author-info">
+                                    <h5>Dr. Priya Menon</h5>
+                                    <p>Professor, IIT Research Lab</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section id="contact" class="section-padding section-alt contact-section-enhanced">
+        <div class="contact-bg-shapes">
+            <div class="contact-shape contact-shape-1"></div>
+            <div class="contact-shape contact-shape-2"></div>
+        </div>
+        <div class="container">
+            <div class="section-header text-center animate-on-scroll">
+                <span class="section-tag"><i class="bi bi-send-fill me-2"></i>Contact</span>
+                <h2 class="section-title">Let's Work <span class="gradient-text">Together</span></h2>
+                <div class="section-divider"></div>
+                <p class="contact-section-desc mt-3">Have a project in mind? Let's discuss how I can help bring your
+                    ideas to life.</p>
+            </div>
+            <div class="row g-5 mt-4">
+                <div class="col-lg-5 animate-on-scroll">
+                    <div class="contact-info-cards">
+
+                        <!-- Email -->
+                        <div class="contact-info-card">
+                            <div class="contact-card-line"></div>
+                            <div class="contact-icon">
+                                <i class="bi bi-envelope-fill"></i>
+                            </div>
+                            <div class="contact-card-details">
+                                <span class="contact-label">Email</span>
+                                <h5>ak@gmail.com</h5>
+                                <p>Drop me an email anytime</p>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="contact-info-card">
+                            <div class="contact-card-line"></div>
+                            <div class="contact-icon">
+                                <i class="bi bi-telephone-fill"></i>
+                            </div>
+                            <div class="contact-card-details">
+                                <span class="contact-label">Phone</span>
+                                <h5>+91 123-4567</h5>
+                                <p>Mon – Fri, 9AM – 6PM PST</p>
+                            </div>
+                        </div>
+
+                        <!-- Location -->
+                        <div class="contact-info-card">
+                            <div class="contact-card-line"></div>
+                            <div class="contact-icon location-icon">
+                                <i class="bi bi-geo-alt-fill"></i>
+                            </div>
+                            <div class="contact-card-details">
+                                <span class="contact-label">Location</span>
+                                <h5>Rajasthan, India</h5>
+                                <p>Open to remote worldwide</p>
+                            </div>
+                        </div>
+
+                        <!-- Availability -->
+                        <div class="contact-info-card availability-card">
+                            <div class="contact-card-line availability-line"></div>
+                            <div class="contact-icon availability-icon">
+                                <i class="bi bi-check-circle-fill"></i>
+                            </div>
+                            <div class="contact-card-details">
+                                <span class="contact-label">Availability</span>
+                                <h5>
+                                    <span class="availability-dot"></span>
+                                    Available for Work
+                                </h5>
+                                <p>Currently taking new projects</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="contact-social mt-4">
+                        <h5 class="contact-social-title">Connect with Me</h5>
+                        <div class="contact-social-links mt-3">
+                            <a href="#" class="social-link-enhanced" aria-label="GitHub">
+                                <i class="bi bi-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="#" class="social-link-enhanced" aria-label="LinkedIn">
+                                <i class="bi bi-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="#" class="social-link-enhanced" aria-label="Twitter">
+                                <i class="bi bi-twitter-x"></i>
+                                <span>Twitter</span>
+                            </a>
+                            <a href="#" class="social-link-enhanced" aria-label="Instagram">
+                                <i class="bi bi-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-lg-7 animate-on-scroll">
+                    <form class="contact-form" id="contactForm">
+                        <div class="contact-form-glow"></div>
+                        <div class="contact-form-header">
+                            <h4><i class="bi bi-pencil-square me-2"></i>Send a Message</h4>
+                            <p>Fill out the form below and I'll get back to you as soon as possible.</p>
+                        </div>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating-custom">
+                                    <input type="text" class="form-control" id="contactName" placeholder="Your Name"
+                                        required>
+                                    <label for="contactName">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating-custom">
+                                    <input type="email" class="form-control" id="contactEmail" placeholder="Your Email"
+                                        required>
+                                    <label for="contactEmail">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating-custom">
+                                    <input type="text" class="form-control" id="contactSubject" placeholder="Subject">
+                                    <label for="contactSubject">Subject</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating-custom">
+                                    <textarea class="form-control" id="contactMessage" placeholder="Your Message"
+                                        rows="6" required></textarea>
+                                    <label for="contactMessage">Your Message</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-glow btn-lg w-100" id="submitBtn">
+                                    <span class="btn-text"><i class="bi bi-send me-2"></i>Send Message</span>
+                                    <span class="btn-loading d-none"><span
+                                            class="spinner-border spinner-border-sm me-2"></span>Sending...</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="form-status mt-3 d-none" id="formStatus"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="brand-icon">&lt;/&gt;</span>
+                    <span class="brand-text">Portfolio</span>
+                </div>
+                <p class="footer-text">Designed & Built with <i class="bi bi-heart-fill text-danger"></i> by Afzal
+                    Khan</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                </div>
+                <p class="footer-copy">&copy; 2026 Afzal Khan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== BACK TO TOP ========== -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="bi bi-chevron-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
