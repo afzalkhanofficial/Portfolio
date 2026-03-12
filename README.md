@@ -1,6 +1,6 @@
 <div align="center">
 
-# ✨ Afzal Khan — Developer Portfolio
+# ✨ Portfolio
 
 ### 🚀 MERN Stack Developer · AI/ML Enthusiast · UI/UX Designer
 
@@ -123,7 +123,8 @@ This is a **modern, premium, dark-themed portfolio website** designed to make a 
 ├── 🎨 styles.css        → Complete stylesheet (3,500+ lines)
 ├── ⚙️ script.js         → All interactivity & animations (340+ lines)
 ├── 📁 media/
-│   └── 🖼️ tom.png       → Profile avatar image
+│   └── 🖼️ afzal.png       → Profile avatar image
+│   └── 📑 AFZAL.pdf       → CV/RESUME
 └── 📄 README.md         → This file
 ```
 
@@ -266,11 +267,6 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 🤝 Connect
 
 <div align="center">
-
-| Platform | Link |
-|----------|------|
-| 📧 **Email** | ak@gmail.com |
-| 📍 **Location** | Rajasthan, India |
 
 <br/>
 
