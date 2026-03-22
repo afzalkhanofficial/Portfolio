@@ -44,8 +44,8 @@ This is a **modern, premium, dark-themed portfolio website** designed to make a 
 - ✨ **Micro-animations** — cursor glow, floating particles, scroll reveals, typewriter effects
 - 📊 **Animated skill rings** with category filtering
 - 🧪 **6 cutting-edge project showcases** spanning MERN, AI/ML, NLP & Design
-- 💼 **3 internship experiences** on a color-coded timeline
-- ⭐ **Supervisor testimonials** with star ratings
+- 💼 **3 professional & internship experiences** on a color-coded timeline
+- ⭐ **Testimonials from supervisors & partners** with custom badges
 - 📬 **Contact form** with loading states and success feedback
 
 ---
@@ -71,6 +71,7 @@ This is a **modern, premium, dark-themed portfolio website** designed to make a 
 | 🖱️ Cursor Glow | Custom radial glow that follows the mouse pointer |
 | ✨ Floating Particles | Randomized animated particles in the hero section |
 | 📝 Noise Texture | Subtle grain overlay for a premium matte feel |
+| 📟 Decipher Preloader | 1-second rapid random-text lock-in loading screen |
 
 ### 🧩 Interactive Components
 | Feature | Description |
@@ -148,10 +149,10 @@ This is a **modern, premium, dark-themed portfolio website** designed to make a 
 - CTA buttons for hiring and resume download
 
 ### 3. 🛠️ Skills Section
-- Category filter tabs (*Frontend*, *Backend*, *Tools*)
+- Category filter tabs (*Technical Skills*, *Tools/Platforms*, *Soft Skills*)
 - Animated SVG circular progress rings
 - Skill cards with icons and proficiency percentages
-- Technologies: React, Node.js, Python, MongoDB, Figma, Git, and more
+- Technologies: C++, Java, Node.js, Python, MongoDB, Docker, Git, AI/ML
 
 ### 4. 💼 Projects Section
 - Filter buttons: **All** · **Full Stack** · **AI/ML** · **Design**
@@ -167,13 +168,13 @@ This is a **modern, premium, dark-themed portfolio website** designed to make a 
 | 06 | **QuantFolio — Portfolio Optimizer** | Python Full Stack | Django, Pandas, Plotly, Monte Carlo |
 
 ### 5. 📋 Experience Section
-Color-coded internship timeline:
+Color-coded professional journey timeline:
 
 | Color | Role | Company |
 |-------|------|---------|
-| 🟠 Coral | UI/UX Design Intern | Designboat UI/UX School |
-| 🟢 Teal | MERN Stack Developer Intern | Cuvette Tech |
-| 🟣 Purple | AI/ML Research Intern | IIT Research Lab |
+| 🟠 Coral | UI/UX Design Intern | Woject Technologies |
+| 🟢 Teal | Full Stack Developer | Infosys Springboard |
+| 🟣 Purple | Founder, Developer & Content Creator | Finenotes4u |
 
 ### 6. ⭐ Testimonials Section
 - 3 supervisor reviews from internship experiences
@@ -183,7 +184,7 @@ Color-coded internship timeline:
 
 ### 7. 📬 Contact Section
 - 3 contact info cards (Email, Phone, Location)
-- Social media links (GitHub, LinkedIn, Twitter, Instagram)
+- Social media links (GitHub, LinkedIn, Hugging Face)
 - Contact form with validation, loading spinner, and success message
 
 ### 8. 🔻 Footer

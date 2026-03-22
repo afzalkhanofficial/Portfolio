@@ -26,6 +26,11 @@
 
 <body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="100">
 
+    <!-- ========== PRELOADER ========== -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-text" id="preloader-text"></div>
+    </div>
+
     <!-- ========== CURSOR GLOW ========== -->
     <div class="cursor-glow" id="cursorGlow"></div>
 
@@ -48,6 +53,7 @@
                     <li class="nav-item"><a class="nav-link" href="#certificates">Certificates</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
                 <a href="#contact" class="btn btn-glow ms-lg-3">Hire Me</a>
@@ -66,9 +72,9 @@
                         <span class="greeting-line"></span>
                         Hello, I'm
                     </p>
-                    <h1 class="hero-title animate-on-scroll">
-                        <span class="gradient-text">Afzal</span>
-                        <span class="gradient-text-secondary">Khan</span>
+                    <h1 class="hero-title animate-on-scroll text-white">
+                        <span class="d-block">Afzal</span>
+                        <span class="d-block">Khan</span>
                     </h1>
                     <div class="hero-typewriter animate-on-scroll">
                         <span class="typewriter-prefix">I'm a&nbsp;</span>
@@ -86,7 +92,7 @@
                         <div class="hero-avatar-ring"></div>
                         <div class="hero-avatar-ring ring-2"></div>
                         <div class="hero-avatar">
-                            <img src="media/afzal.jpg" alt="Profile Photo" class="avatar-image">
+                            <img src="media/afzal.png" alt="Profile Photo" class="avatar-image">
                         </div>
                         <div class="floating-badge badge-1">
                             <i class="bi bi-code-slash"></i>
@@ -157,7 +163,7 @@
                         <div class="about-profile-card">
                             <div class="about-profile-glow"></div>
                             <div class="about-profile-img-wrap">
-                                <img src="media/afzal.jpg" alt="Profile Photo" class="about-profile-img">
+                                <img src="media/afzal.png" alt="Profile Photo" class="about-profile-img">
                             </div>
                             <div class="about-profile-overlay">
                                 <span class="about-profile-name">Afzal Khan</span>
@@ -307,163 +313,280 @@
                 <button class="filter-btn active" data-filter="all">
                     <i class="bi bi-grid-3x3-gap-fill me-1"></i>All
                 </button>
-                <button class="filter-btn" data-filter="frontend">
-                    <i class="bi bi-window-stack me-1"></i>Frontend
-                </button>
-                <button class="filter-btn" data-filter="backend">
-                    <i class="bi bi-server me-1"></i>Backend
+                <button class="filter-btn" data-filter="technical">
+                    <i class="bi bi-code-slash me-1"></i>Technical Skills
                 </button>
                 <button class="filter-btn" data-filter="tools">
-                    <i class="bi bi-wrench-adjustable me-1"></i>Tools
+                    <i class="bi bi-wrench-adjustable me-1"></i>Tools/Platforms
+                </button>
+                <button class="filter-btn" data-filter="soft">
+                    <i class="bi bi-person-heart me-1"></i>Soft Skills
                 </button>
             </div>
 
             <div class="skills-grid mt-5">
-                <!-- Frontend Skills -->
-                <div class="skill-card animate-on-scroll" data-category="frontend">
+                <!-- Technical Skills & Languages -->
+                <div class="skill-card animate-on-scroll" data-category="technical">
+                    <div class="skill-ring-wrapper">
+                        <svg class="skill-ring" viewBox="0 0 120 120">
+                            <circle class="skill-ring-bg" cx="60" cy="60" r="52"></circle>
+                            <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #00599C;"
+                                data-percent="85"></circle>
+                        </svg>
+                        <div class="skill-ring-icon" style="--skill-color: #00599C;"><i class="bi bi-c-circle"></i>
+                        </div>
+                    </div>
+                    <h4 class="skill-name">C++</h4>
+                    <span class="skill-percent" style="--skill-color: #00599C;">85%</span>
+                </div>
+
+                <div class="skill-card animate-on-scroll" data-category="technical">
+                    <div class="skill-ring-wrapper">
+                        <svg class="skill-ring" viewBox="0 0 120 120">
+                            <circle class="skill-ring-bg" cx="60" cy="60" r="52"></circle>
+                            <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #3776AB;"
+                                data-percent="85"></circle>
+                        </svg>
+                        <div class="skill-ring-icon" style="--skill-color: #3776AB;"><i class="bi bi-filetype-py"></i>
+                        </div>
+                    </div>
+                    <h4 class="skill-name">Python</h4>
+                    <span class="skill-percent" style="--skill-color: #3776AB;">85%</span>
+                </div>
+
+                <div class="skill-card animate-on-scroll" data-category="technical">
+                    <div class="skill-ring-wrapper">
+                        <svg class="skill-ring" viewBox="0 0 120 120">
+                            <circle class="skill-ring-bg" cx="60" cy="60" r="52"></circle>
+                            <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #5382A1;"
+                                data-percent="80"></circle>
+                        </svg>
+                        <div class="skill-ring-icon" style="--skill-color: #5382A1;"><i class="bi bi-cup-hot"></i></div>
+                    </div>
+                    <h4 class="skill-name">Java</h4>
+                    <span class="skill-percent" style="--skill-color: #5382A1;">80%</span>
+                </div>
+
+                <div class="skill-card animate-on-scroll" data-category="technical">
                     <div class="skill-ring-wrapper">
                         <svg class="skill-ring" viewBox="0 0 120 120">
                             <circle class="skill-ring-bg" cx="60" cy="60" r="52"></circle>
                             <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #E34F26;"
                                 data-percent="95"></circle>
                         </svg>
-                        <div class="skill-ring-icon" style="--skill-color: #E34F26;">
-                            <i class="bi bi-filetype-html"></i>
+                        <div class="skill-ring-icon" style="--skill-color: #E34F26;"><i class="bi bi-filetype-html"></i>
                         </div>
                     </div>
-                    <h4 class="skill-name">HTML5</h4>
+                    <h4 class="skill-name">HTML</h4>
                     <span class="skill-percent" style="--skill-color: #E34F26;">95%</span>
                 </div>
-                <div class="skill-card animate-on-scroll" data-category="frontend">
+
+                <div class="skill-card animate-on-scroll" data-category="technical">
                     <div class="skill-ring-wrapper">
                         <svg class="skill-ring" viewBox="0 0 120 120">
                             <circle class="skill-ring-bg" cx="60" cy="60" r="52"></circle>
                             <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #1572B6;"
                                 data-percent="90"></circle>
                         </svg>
-                        <div class="skill-ring-icon" style="--skill-color: #1572B6;">
-                            <i class="bi bi-filetype-css"></i>
+                        <div class="skill-ring-icon" style="--skill-color: #1572B6;"><i class="bi bi-filetype-css"></i>
                         </div>
                     </div>
-                    <h4 class="skill-name">CSS3</h4>
+                    <h4 class="skill-name">CSS</h4>
                     <span class="skill-percent" style="--skill-color: #1572B6;">90%</span>
                 </div>
-                <div class="skill-card animate-on-scroll" data-category="frontend">
+
+                <div class="skill-card animate-on-scroll" data-category="technical">
                     <div class="skill-ring-wrapper">
                         <svg class="skill-ring" viewBox="0 0 120 120">
                             <circle class="skill-ring-bg" cx="60" cy="60" r="52"></circle>
                             <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #F7DF1E;"
                                 data-percent="88"></circle>
                         </svg>
-                        <div class="skill-ring-icon" style="--skill-color: #F7DF1E;">
-                            <i class="bi bi-filetype-js"></i>
+                        <div class="skill-ring-icon" style="--skill-color: #F7DF1E;"><i class="bi bi-filetype-js"></i>
                         </div>
                     </div>
                     <h4 class="skill-name">JavaScript</h4>
                     <span class="skill-percent" style="--skill-color: #F7DF1E;">88%</span>
                 </div>
-                <div class="skill-card animate-on-scroll" data-category="frontend">
-                    <div class="skill-ring-wrapper">
-                        <svg class="skill-ring" viewBox="0 0 120 120">
-                            <circle class="skill-ring-bg" cx="60" cy="60" r="52"></circle>
-                            <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #61DAFB;"
-                                data-percent="85"></circle>
-                        </svg>
-                        <div class="skill-ring-icon" style="--skill-color: #61DAFB;">
-                            <i class="bi bi-braces-asterisk"></i>
-                        </div>
-                    </div>
-                    <h4 class="skill-name">React</h4>
-                    <span class="skill-percent" style="--skill-color: #61DAFB;">85%</span>
-                </div>
-                <div class="skill-card animate-on-scroll" data-category="frontend">
+
+                <div class="skill-card animate-on-scroll" data-category="technical">
                     <div class="skill-ring-wrapper">
                         <svg class="skill-ring" viewBox="0 0 120 120">
                             <circle class="skill-ring-bg" cx="60" cy="60" r="52"></circle>
                             <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #7952B3;"
                                 data-percent="92"></circle>
                         </svg>
-                        <div class="skill-ring-icon" style="--skill-color: #7952B3;">
-                            <i class="bi bi-bootstrap-fill"></i>
-                        </div>
+                        <div class="skill-ring-icon" style="--skill-color: #7952B3;"><i
+                                class="bi bi-bootstrap-fill"></i></div>
                     </div>
                     <h4 class="skill-name">Bootstrap</h4>
                     <span class="skill-percent" style="--skill-color: #7952B3;">92%</span>
                 </div>
-                <div class="skill-card animate-on-scroll" data-category="frontend">
+
+                <div class="skill-card animate-on-scroll" data-category="technical">
                     <div class="skill-ring-wrapper">
                         <svg class="skill-ring" viewBox="0 0 120 120">
                             <circle class="skill-ring-bg" cx="60" cy="60" r="52"></circle>
-                            <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #3178C6;"
-                                data-percent="80"></circle>
+                            <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #38B2AC;"
+                                data-percent="85"></circle>
                         </svg>
-                        <div class="skill-ring-icon" style="--skill-color: #3178C6;">
-                            <i class="bi bi-filetype-tsx"></i>
-                        </div>
+                        <div class="skill-ring-icon" style="--skill-color: #38B2AC;"><i class="bi bi-wind"></i></div>
                     </div>
-                    <h4 class="skill-name">TypeScript</h4>
-                    <span class="skill-percent" style="--skill-color: #3178C6;">80%</span>
+                    <h4 class="skill-name">Tailwind</h4>
+                    <span class="skill-percent" style="--skill-color: #38B2AC;">85%</span>
                 </div>
 
-                <!-- Backend Skills -->
-                <div class="skill-card animate-on-scroll" data-category="backend">
+                <div class="skill-card animate-on-scroll" data-category="technical">
+                    <div class="skill-ring-wrapper">
+                        <svg class="skill-ring" viewBox="0 0 120 120">
+                            <circle class="skill-ring-bg" cx="60" cy="60" r="52"></circle>
+                            <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #61DAFB;"
+                                data-percent="85"></circle>
+                        </svg>
+                        <div class="skill-ring-icon" style="--skill-color: #61DAFB;"><i
+                                class="bi bi-braces-asterisk"></i></div>
+                    </div>
+                    <h4 class="skill-name">React</h4>
+                    <span class="skill-percent" style="--skill-color: #61DAFB;">85%</span>
+                </div>
+
+                <div class="skill-card animate-on-scroll" data-category="technical">
                     <div class="skill-ring-wrapper">
                         <svg class="skill-ring" viewBox="0 0 120 120">
                             <circle class="skill-ring-bg" cx="60" cy="60" r="52"></circle>
                             <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #68A063;"
                                 data-percent="85"></circle>
                         </svg>
-                        <div class="skill-ring-icon" style="--skill-color: #68A063;">
-                            <i class="bi bi-hdd-stack"></i>
+                        <div class="skill-ring-icon" style="--skill-color: #68A063;"><i class="bi bi-hdd-stack"></i>
                         </div>
                     </div>
                     <h4 class="skill-name">Node.js</h4>
                     <span class="skill-percent" style="--skill-color: #68A063;">85%</span>
                 </div>
-                <div class="skill-card animate-on-scroll" data-category="backend">
+
+                <div class="skill-card animate-on-scroll" data-category="technical">
+                    <div class="skill-ring-wrapper">
+                        <svg class="skill-ring" viewBox="0 0 120 120">
+                            <circle class="skill-ring-bg" cx="60" cy="60" r="52"></circle>
+                            <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #AAAAAA;"
+                                data-percent="80"></circle>
+                        </svg>
+                        <div class="skill-ring-icon" style="--skill-color: #AAAAAA;"><i class="bi bi-server"></i></div>
+                    </div>
+                    <h4 class="skill-name">Express.js</h4>
+                    <span class="skill-percent" style="--skill-color: #AAAAAA;">80%</span>
+                </div>
+
+                <div class="skill-card animate-on-scroll" data-category="technical">
+                    <div class="skill-ring-wrapper">
+                        <svg class="skill-ring" viewBox="0 0 120 120">
+                            <circle class="skill-ring-bg" cx="60" cy="60" r="52"></circle>
+                            <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #009688;"
+                                data-percent="85"></circle>
+                        </svg>
+                        <div class="skill-ring-icon" style="--skill-color: #009688;"><i
+                                class="bi bi-cloud-arrow-down"></i></div>
+                    </div>
+                    <h4 class="skill-name">REST API</h4>
+                    <span class="skill-percent" style="--skill-color: #009688;">85%</span>
+                </div>
+
+                <div class="skill-card animate-on-scroll" data-category="technical">
+                    <div class="skill-ring-wrapper">
+                        <svg class="skill-ring" viewBox="0 0 120 120">
+                            <circle class="skill-ring-bg" cx="60" cy="60" r="52"></circle>
+                            <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #FF9800;"
+                                data-percent="85"></circle>
+                        </svg>
+                        <div class="skill-ring-icon" style="--skill-color: #FF9800;"><i class="bi bi-plug"></i></div>
+                    </div>
+                    <h4 class="skill-name">API Integration</h4>
+                    <span class="skill-percent" style="--skill-color: #FF9800;">85%</span>
+                </div>
+
+                <div class="skill-card animate-on-scroll" data-category="technical">
                     <div class="skill-ring-wrapper">
                         <svg class="skill-ring" viewBox="0 0 120 120">
                             <circle class="skill-ring-bg" cx="60" cy="60" r="52"></circle>
                             <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #336791;"
-                                data-percent="78"></circle>
+                                data-percent="85"></circle>
                         </svg>
-                        <div class="skill-ring-icon" style="--skill-color: #336791;">
-                            <i class="bi bi-database-fill"></i>
+                        <div class="skill-ring-icon" style="--skill-color: #336791;"><i class="bi bi-database"></i>
                         </div>
                     </div>
-                    <h4 class="skill-name">PostgreSQL</h4>
-                    <span class="skill-percent" style="--skill-color: #336791;">78%</span>
+                    <h4 class="skill-name">SQL</h4>
+                    <span class="skill-percent" style="--skill-color: #336791;">85%</span>
                 </div>
-                <div class="skill-card animate-on-scroll" data-category="backend">
-                    <div class="skill-ring-wrapper">
-                        <svg class="skill-ring" viewBox="0 0 120 120">
-                            <circle class="skill-ring-bg" cx="60" cy="60" r="52"></circle>
-                            <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #3776AB;"
-                                data-percent="82"></circle>
-                        </svg>
-                        <div class="skill-ring-icon" style="--skill-color: #3776AB;">
-                            <i class="bi bi-filetype-py"></i>
-                        </div>
-                    </div>
-                    <h4 class="skill-name">Python</h4>
-                    <span class="skill-percent" style="--skill-color: #3776AB;">82%</span>
-                </div>
-                <div class="skill-card animate-on-scroll" data-category="backend">
+
+                <div class="skill-card animate-on-scroll" data-category="technical">
                     <div class="skill-ring-wrapper">
                         <svg class="skill-ring" viewBox="0 0 120 120">
                             <circle class="skill-ring-bg" cx="60" cy="60" r="52"></circle>
                             <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #47A248;"
-                                data-percent="75"></circle>
+                                data-percent="80"></circle>
                         </svg>
-                        <div class="skill-ring-icon" style="--skill-color: #47A248;">
-                            <i class="bi bi-database"></i>
+                        <div class="skill-ring-icon" style="--skill-color: #47A248;"><i class="bi bi-database-fill"></i>
                         </div>
                     </div>
                     <h4 class="skill-name">MongoDB</h4>
-                    <span class="skill-percent" style="--skill-color: #47A248;">75%</span>
+                    <span class="skill-percent" style="--skill-color: #47A248;">80%</span>
                 </div>
 
-                <!-- Tools -->
+                <div class="skill-card animate-on-scroll" data-category="technical">
+                    <div class="skill-ring-wrapper">
+                        <svg class="skill-ring" viewBox="0 0 120 120">
+                            <circle class="skill-ring-bg" cx="60" cy="60" r="52"></circle>
+                            <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #FF6F00;"
+                                data-percent="75"></circle>
+                        </svg>
+                        <div class="skill-ring-icon" style="--skill-color: #FF6F00;"><i class="bi bi-robot"></i></div>
+                    </div>
+                    <h4 class="skill-name">Machine Learning</h4>
+                    <span class="skill-percent" style="--skill-color: #FF6F00;">75%</span>
+                </div>
+
+                <div class="skill-card animate-on-scroll" data-category="technical">
+                    <div class="skill-ring-wrapper">
+                        <svg class="skill-ring" viewBox="0 0 120 120">
+                            <circle class="skill-ring-bg" cx="60" cy="60" r="52"></circle>
+                            <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #9C27B0;"
+                                data-percent="75"></circle>
+                        </svg>
+                        <div class="skill-ring-icon" style="--skill-color: #9C27B0;"><i class="bi bi-cpu"></i></div>
+                    </div>
+                    <h4 class="skill-name">Artificial Intelligence</h4>
+                    <span class="skill-percent" style="--skill-color: #9C27B0;">75%</span>
+                </div>
+
+                <div class="skill-card animate-on-scroll" data-category="technical">
+                    <div class="skill-ring-wrapper">
+                        <svg class="skill-ring" viewBox="0 0 120 120">
+                            <circle class="skill-ring-bg" cx="60" cy="60" r="52"></circle>
+                            <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #E91E63;"
+                                data-percent="80"></circle>
+                        </svg>
+                        <div class="skill-ring-icon" style="--skill-color: #E91E63;"><i class="bi bi-diagram-3"></i>
+                        </div>
+                    </div>
+                    <h4 class="skill-name">DSA</h4>
+                    <span class="skill-percent" style="--skill-color: #E91E63;">80%</span>
+                </div>
+
+                <div class="skill-card animate-on-scroll" data-category="technical">
+                    <div class="skill-ring-wrapper">
+                        <svg class="skill-ring" viewBox="0 0 120 120">
+                            <circle class="skill-ring-bg" cx="60" cy="60" r="52"></circle>
+                            <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #FF4081;"
+                                data-percent="85"></circle>
+                        </svg>
+                        <div class="skill-ring-icon" style="--skill-color: #FF4081;"><i class="bi bi-vector-pen"></i>
+                        </div>
+                    </div>
+                    <h4 class="skill-name">UI/UX</h4>
+                    <span class="skill-percent" style="--skill-color: #FF4081;">85%</span>
+                </div>
+
+                <!-- Tools & Platforms -->
                 <div class="skill-card animate-on-scroll" data-category="tools">
                     <div class="skill-ring-wrapper">
                         <svg class="skill-ring" viewBox="0 0 120 120">
@@ -471,54 +594,213 @@
                             <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #F05032;"
                                 data-percent="90"></circle>
                         </svg>
-                        <div class="skill-ring-icon" style="--skill-color: #F05032;">
-                            <i class="bi bi-git"></i>
-                        </div>
+                        <div class="skill-ring-icon" style="--skill-color: #F05032;"><i class="bi bi-git"></i></div>
                     </div>
                     <h4 class="skill-name">Git</h4>
                     <span class="skill-percent" style="--skill-color: #F05032;">90%</span>
                 </div>
+
+                <div class="skill-card animate-on-scroll" data-category="tools">
+                    <div class="skill-ring-wrapper">
+                        <svg class="skill-ring" viewBox="0 0 120 120">
+                            <circle class="skill-ring-bg" cx="60" cy="60" r="52"></circle>
+                            <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #FFFFFF;"
+                                data-percent="90"></circle>
+                        </svg>
+                        <div class="skill-ring-icon" style="--skill-color: #FFFFFF;"><i class="bi bi-github"></i></div>
+                    </div>
+                    <h4 class="skill-name">GitHub</h4>
+                    <span class="skill-percent" style="--skill-color: #FFFFFF;">90%</span>
+                </div>
+
                 <div class="skill-card animate-on-scroll" data-category="tools">
                     <div class="skill-ring-wrapper">
                         <svg class="skill-ring" viewBox="0 0 120 120">
                             <circle class="skill-ring-bg" cx="60" cy="60" r="52"></circle>
                             <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #2496ED;"
-                                data-percent="72"></circle>
+                                data-percent="75"></circle>
                         </svg>
-                        <div class="skill-ring-icon" style="--skill-color: #2496ED;">
-                            <i class="bi bi-box-seam-fill"></i>
+                        <div class="skill-ring-icon" style="--skill-color: #2496ED;"><i class="bi bi-box-seam"></i>
                         </div>
                     </div>
                     <h4 class="skill-name">Docker</h4>
-                    <span class="skill-percent" style="--skill-color: #2496ED;">72%</span>
+                    <span class="skill-percent" style="--skill-color: #2496ED;">75%</span>
                 </div>
+
                 <div class="skill-card animate-on-scroll" data-category="tools">
                     <div class="skill-ring-wrapper">
                         <svg class="skill-ring" viewBox="0 0 120 120">
                             <circle class="skill-ring-bg" cx="60" cy="60" r="52"></circle>
-                            <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #FF6F00;"
+                            <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #FF9900;"
                                 data-percent="70"></circle>
                         </svg>
-                        <div class="skill-ring-icon" style="--skill-color: #FF6F00;">
-                            <i class="bi bi-cloud-fill"></i>
+                        <div class="skill-ring-icon" style="--skill-color: #FF9900;"><i class="bi bi-cloud-fill"></i>
                         </div>
                     </div>
                     <h4 class="skill-name">AWS</h4>
-                    <span class="skill-percent" style="--skill-color: #FF6F00;">70%</span>
+                    <span class="skill-percent" style="--skill-color: #FF9900;">70%</span>
                 </div>
+
+                <div class="skill-card animate-on-scroll" data-category="tools">
+                    <div class="skill-ring-wrapper">
+                        <svg class="skill-ring" viewBox="0 0 120 120">
+                            <circle class="skill-ring-bg" cx="60" cy="60" r="52"></circle>
+                            <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #FF6C37;"
+                                data-percent="85"></circle>
+                        </svg>
+                        <div class="skill-ring-icon" style="--skill-color: #FF6C37;"><i class="bi bi-send"></i></div>
+                    </div>
+                    <h4 class="skill-name">Postman</h4>
+                    <span class="skill-percent" style="--skill-color: #FF6C37;">85%</span>
+                </div>
+
+                <div class="skill-card animate-on-scroll" data-category="tools">
+                    <div class="skill-ring-wrapper">
+                        <svg class="skill-ring" viewBox="0 0 120 120">
+                            <circle class="skill-ring-bg" cx="60" cy="60" r="52"></circle>
+                            <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #007ACC;"
+                                data-percent="95"></circle>
+                        </svg>
+                        <div class="skill-ring-icon" style="--skill-color: #007ACC;"><i class="bi bi-code-square"></i>
+                        </div>
+                    </div>
+                    <h4 class="skill-name">VS Code</h4>
+                    <span class="skill-percent" style="--skill-color: #007ACC;">95%</span>
+                </div>
+
+                <div class="skill-card animate-on-scroll" data-category="tools">
+                    <div class="skill-ring-wrapper">
+                        <svg class="skill-ring" viewBox="0 0 120 120">
+                            <circle class="skill-ring-bg" cx="60" cy="60" r="52"></circle>
+                            <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #F9AB00;"
+                                data-percent="80"></circle>
+                        </svg>
+                        <div class="skill-ring-icon" style="--skill-color: #F9AB00;"><i class="bi bi-google"></i></div>
+                    </div>
+                    <h4 class="skill-name">Google Colab</h4>
+                    <span class="skill-percent" style="--skill-color: #F9AB00;">80%</span>
+                </div>
+
+                <div class="skill-card animate-on-scroll" data-category="tools">
+                    <div class="skill-ring-wrapper">
+                        <svg class="skill-ring" viewBox="0 0 120 120">
+                            <circle class="skill-ring-bg" cx="60" cy="60" r="52"></circle>
+                            <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #20BEFF;"
+                                data-percent="75"></circle>
+                        </svg>
+                        <div class="skill-ring-icon" style="--skill-color: #20BEFF;"><i class="bi bi-graph-up"></i>
+                        </div>
+                    </div>
+                    <h4 class="skill-name">Kaggle</h4>
+                    <span class="skill-percent" style="--skill-color: #20BEFF;">75%</span>
+                </div>
+
                 <div class="skill-card animate-on-scroll" data-category="tools">
                     <div class="skill-ring-wrapper">
                         <svg class="skill-ring" viewBox="0 0 120 120">
                             <circle class="skill-ring-bg" cx="60" cy="60" r="52"></circle>
                             <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #F24E1E;"
-                                data-percent="80"></circle>
+                                data-percent="85"></circle>
                         </svg>
-                        <div class="skill-ring-icon" style="--skill-color: #F24E1E;">
-                            <i class="bi bi-vector-pen"></i>
-                        </div>
+                        <div class="skill-ring-icon" style="--skill-color: #F24E1E;"><i class="bi bi-palette"></i></div>
                     </div>
                     <h4 class="skill-name">Figma</h4>
-                    <span class="skill-percent" style="--skill-color: #F24E1E;">80%</span>
+                    <span class="skill-percent" style="--skill-color: #F24E1E;">85%</span>
+                </div>
+
+                <div class="skill-card animate-on-scroll" data-category="tools">
+                    <div class="skill-ring-wrapper">
+                        <svg class="skill-ring" viewBox="0 0 120 120">
+                            <circle class="skill-ring-bg" cx="60" cy="60" r="52"></circle>
+                            <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #00C4CC;"
+                                data-percent="90"></circle>
+                        </svg>
+                        <div class="skill-ring-icon" style="--skill-color: #00C4CC;"><i class="bi bi-brush"></i></div>
+                    </div>
+                    <h4 class="skill-name">Canva</h4>
+                    <span class="skill-percent" style="--skill-color: #00C4CC;">90%</span>
+                </div>
+
+                <div class="skill-card animate-on-scroll" data-category="tools">
+                    <div class="skill-ring-wrapper">
+                        <svg class="skill-ring" viewBox="0 0 120 120">
+                            <circle class="skill-ring-bg" cx="60" cy="60" r="52"></circle>
+                            <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #FF0000;"
+                                data-percent="75"></circle>
+                        </svg>
+                        <div class="skill-ring-icon" style="--skill-color: #FF0000;"><i class="bi bi-image"></i></div>
+                    </div>
+                    <h4 class="skill-name">Adobe</h4>
+                    <span class="skill-percent" style="--skill-color: #FF0000;">75%</span>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="skill-card animate-on-scroll" data-category="soft">
+                    <div class="skill-ring-wrapper">
+                        <svg class="skill-ring" viewBox="0 0 120 120">
+                            <circle class="skill-ring-bg" cx="60" cy="60" r="52"></circle>
+                            <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #4CAF50;"
+                                data-percent="95"></circle>
+                        </svg>
+                        <div class="skill-ring-icon" style="--skill-color: #4CAF50;"><i class="bi bi-chat-dots"></i>
+                        </div>
+                    </div>
+                    <h4 class="skill-name">Communication</h4>
+                    <span class="skill-percent" style="--skill-color: #4CAF50;">95%</span>
+                </div>
+
+                <div class="skill-card animate-on-scroll" data-category="soft">
+                    <div class="skill-ring-wrapper">
+                        <svg class="skill-ring" viewBox="0 0 120 120">
+                            <circle class="skill-ring-bg" cx="60" cy="60" r="52"></circle>
+                            <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #FFC107;"
+                                data-percent="85"></circle>
+                        </svg>
+                        <div class="skill-ring-icon" style="--skill-color: #FFC107;"><i class="bi bi-person-up"></i>
+                        </div>
+                    </div>
+                    <h4 class="skill-name">Leadership</h4>
+                    <span class="skill-percent" style="--skill-color: #FFC107;">85%</span>
+                </div>
+
+                <div class="skill-card animate-on-scroll" data-category="soft">
+                    <div class="skill-ring-wrapper">
+                        <svg class="skill-ring" viewBox="0 0 120 120">
+                            <circle class="skill-ring-bg" cx="60" cy="60" r="52"></circle>
+                            <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #03A9F4;"
+                                data-percent="90"></circle>
+                        </svg>
+                        <div class="skill-ring-icon" style="--skill-color: #03A9F4;"><i class="bi bi-clock-history"></i>
+                        </div>
+                    </div>
+                    <h4 class="skill-name">Time Management</h4>
+                    <span class="skill-percent" style="--skill-color: #03A9F4;">90%</span>
+                </div>
+
+                <div class="skill-card animate-on-scroll" data-category="soft">
+                    <div class="skill-ring-wrapper">
+                        <svg class="skill-ring" viewBox="0 0 120 120">
+                            <circle class="skill-ring-bg" cx="60" cy="60" r="52"></circle>
+                            <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #8BC34A;"
+                                data-percent="90"></circle>
+                        </svg>
+                        <div class="skill-ring-icon" style="--skill-color: #8BC34A;"><i class="bi bi-puzzle"></i></div>
+                    </div>
+                    <h4 class="skill-name">Problem Solving</h4>
+                    <span class="skill-percent" style="--skill-color: #8BC34A;">90%</span>
+                </div>
+
+                <div class="skill-card animate-on-scroll" data-category="soft">
+                    <div class="skill-ring-wrapper">
+                        <svg class="skill-ring" viewBox="0 0 120 120">
+                            <circle class="skill-ring-bg" cx="60" cy="60" r="52"></circle>
+                            <circle class="skill-ring-progress" cx="60" cy="60" r="52" style="--skill-color: #673AB7;"
+                                data-percent="95"></circle>
+                        </svg>
+                        <div class="skill-ring-icon" style="--skill-color: #673AB7;"><i class="bi bi-people"></i></div>
+                    </div>
+                    <h4 class="skill-name">Collaboration</h4>
+                    <span class="skill-percent" style="--skill-color: #673AB7;">95%</span>
                 </div>
             </div>
         </div>
@@ -545,13 +827,20 @@
                 <div class="col-lg-4 col-md-6 animate-on-scroll">
                     <div class="certificate-card">
                         <div class="certificate-card-glow"></div>
+                        <div class="certificate-badge"><i class="bi bi-patch-check"></i> Verified</div>
                         <div class="certificate-icon" style="--cert-hue: 160;">
                             <i class="bi bi-patch-check-fill"></i>
                         </div>
                         <div class="certificate-info">
                             <h4 class="certificate-title">MongoDB & ICT Academy Skill-a-thon 2025</h4>
                             <p class="certificate-issuer">MongoDB & ICT Academy</p>
-                            <div class="certificate-year"><i class="bi bi-calendar3 me-1"></i>2025</div>
+                            <div class="certificate-footer">
+                                <div class="certificate-year"><i class="bi bi-calendar3 me-1"></i>2025</div>
+                                <a href="https://www.credly.com/users/afzalkhan" class="certificate-link"
+                                    target="_blank">
+                                    View <i class="bi bi-arrow-up-right"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -559,13 +848,20 @@
                 <div class="col-lg-4 col-md-6 animate-on-scroll">
                     <div class="certificate-card">
                         <div class="certificate-card-glow"></div>
+                        <div class="certificate-badge"><i class="bi bi-patch-check"></i> Verified</div>
                         <div class="certificate-icon" style="--cert-hue: 250;">
                             <i class="bi bi-cloud-check-fill"></i>
                         </div>
                         <div class="certificate-info">
                             <h4 class="certificate-title">NPTEL Cloud Computing certification</h4>
                             <p class="certificate-issuer">IIT Kharagpur</p>
-                            <div class="certificate-year"><i class="bi bi-calendar3 me-1"></i>2024</div>
+                            <div class="certificate-footer">
+                                <div class="certificate-year"><i class="bi bi-calendar3 me-1"></i>2024</div>
+                                <a href="https://archive.nptel.ac.in/content/noc/NOC25/SEM1/Ecertificates/106/noc25-cs11/Course/NPTEL25CS11S133730090604228428.pdf"
+                                    class="certificate-link" target="_blank">
+                                    View <i class="bi bi-arrow-up-right"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -573,13 +869,20 @@
                 <div class="col-lg-4 col-md-6 animate-on-scroll">
                     <div class="certificate-card">
                         <div class="certificate-card-glow"></div>
+                        <div class="certificate-badge"><i class="bi bi-patch-check"></i> Verified</div>
                         <div class="certificate-icon" style="--cert-hue: 15;">
                             <i class="bi bi-github"></i>
                         </div>
                         <div class="certificate-info">
                             <h4 class="certificate-title">Career Essentials in GitHub</h4>
                             <p class="certificate-issuer">GitHub</p>
-                            <div class="certificate-year"><i class="bi bi-calendar3 me-1"></i>2024</div>
+                            <div class="certificate-footer">
+                                <div class="certificate-year"><i class="bi bi-calendar3 me-1"></i>2024</div>
+                                <a href="https://www.linkedin.com/learning/certificates/4db4605bf6886b609d763e531ed359dc7f9e045d9d9fbfe8fa655cae4fc95223?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BTV0HcNalR92SqLu%2FKjzIWg%3D%3D"
+                                    class="certificate-link" target="_blank">
+                                    View <i class="bi bi-arrow-up-right"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -632,18 +935,20 @@
                             <div class="project-number">01</div>
                             <div class="project-category-badge">MERN Stack</div>
                             <div class="project-overlay">
-                                <a href="#" class="overlay-btn" title="Live Demo"><i
-                                        class="bi bi-box-arrow-up-right"></i></a>
-                                <a href="#" class="overlay-btn" title="Source Code"><i class="bi bi-github"></i></a>
+                                <a href="https://the-chronicle-seven.vercel.app/" class="overlay-btn" target="_blank"
+                                    title="Live Demo"><i class="bi bi-box-arrow-up-right"></i></a>
+                                <a href="https://github.com/afzalkhanofficial/The-Chronicle" class="overlay-btn"
+                                    target="_blank" title="Source Code"><i class="bi bi-github"></i></a>
                             </div>
                         </div>
                         <div class="project-info">
                             <div class="project-info-top">
-                                <h4 class="project-title">CollabCode — Real-Time IDE</h4>
+                                <h4 class="project-title">The Chronicle</h4>
                                 <div class="project-status"><span class="status-dot live"></span>Live</div>
                             </div>
-                            <p class="project-desc">A cloud-based collaborative code editor with live cursors,
-                                multi-language execution, and AI-assisted debugging — inspired by Replit & CodeSandbox.
+                            <p class="project-desc">A Blog Application dynamic web app built with HTML, CSS, JavaScript,
+                                React, Node.js, and MongoDB allows users to create, read, update, and delete blog posts,
+                                as well as interact with the content through comments.
                             </p>
                             <div class="project-tags">
                                 <span>React</span><span>Node.js</span><span>MongoDB</span><span>Socket.io</span>
@@ -651,31 +956,33 @@
                         </div>
                     </div>
                 </div>
-                <!-- Project 2 — Machine Learning -->
+                <!-- Project 2 — NLP -->
                 <div class="col-lg-4 col-md-6 project-item animate-on-scroll" data-project-category="aiml">
                     <div class="project-card">
                         <div class="project-card-glow"></div>
                         <div class="project-image">
-                            <div class="project-image-placeholder" style="--ph-hue: 160;">
-                                <i class="bi bi-heart-pulse-fill"></i>
+                            <div class="project-image-placeholder" style="--ph-hue: 310;">
+                                <i class="bi bi-chat-left-text-fill"></i>
                             </div>
                             <div class="project-number">02</div>
-                            <div class="project-category-badge">Machine Learning</div>
+                            <div class="project-category-badge">NLP</div>
                             <div class="project-overlay">
-                                <a href="#" class="overlay-btn" title="Live Demo"><i
-                                        class="bi bi-box-arrow-up-right"></i></a>
-                                <a href="#" class="overlay-btn" title="Source Code"><i class="bi bi-github"></i></a>
+                                <a href="https://afzalkhanofficial.github.io/Med-AI/" class="overlay-btn"
+                                    target="_blank" title="Live Demo"><i class="bi bi-box-arrow-up-right"></i></a>
+                                <a href="https://github.com/afzalkhanofficial/Med-AI" class="overlay-btn"
+                                    target="_blank" title="Source Code"><i class="bi bi-github"></i></a>
                             </div>
                         </div>
                         <div class="project-info">
                             <div class="project-info-top">
-                                <h4 class="project-title">VitalSense — Predictive Health</h4>
+                                <h4 class="project-title">MedAI</h4>
                                 <div class="project-status"><span class="status-dot live"></span>Live</div>
                             </div>
-                            <p class="project-desc">Predictive health analytics platform using wearable sensor data to
-                                detect early signs of cardiac anomalies with 94% accuracy using LSTM + XGBoost.</p>
+                            <p class="project-desc">Transform dense healthcare policy briefs into actionable insights.
+                                Our advanced extractive ML models preserve context, saving researchers hours of
+                                analysis.</p>
                             <div class="project-tags">
-                                <span>Python</span><span>TensorFlow</span><span>Scikit-learn</span><span>Flask</span>
+                                <span>TF-IDF</span><span>Python</span><span>Flask</span><span>Docker</span>
                             </div>
                         </div>
                     </div>
@@ -691,15 +998,16 @@
                             <div class="project-number">03</div>
                             <div class="project-category-badge">UI/UX</div>
                             <div class="project-overlay">
-                                <a href="#" class="overlay-btn" title="Live Demo"><i
+                                <a href="#" class="overlay-btn" target="_blank" title="Live Demo"><i
                                         class="bi bi-box-arrow-up-right"></i></a>
-                                <a href="#" class="overlay-btn" title="Source Code"><i class="bi bi-github"></i></a>
+                                <a href="#" class="overlay-btn" target="_blank" title="Source Code"><i
+                                        class="bi bi-github"></i></a>
                             </div>
                         </div>
                         <div class="project-info">
                             <div class="project-info-top">
                                 <h4 class="project-title">AccessFlow — Design System</h4>
-                                <div class="project-status"><span class="status-dot completed"></span>Done</div>
+                                <div class="project-status"><span class="status-dot wip"></span>WIP</div>
                             </div>
                             <p class="project-desc">An adaptive, accessibility-first design system with WCAG 2.2
                                 compliance, dynamic theming, and motion-safe components — inspired by Google Material 3.
@@ -710,7 +1018,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Project 4 — AI (RAG) -->
+                <!-- Project 4 — System Monitoring -->
                 <div class="col-lg-4 col-md-6 project-item animate-on-scroll" data-project-category="aiml">
                     <div class="project-card">
                         <div class="project-card-glow"></div>
@@ -719,57 +1027,62 @@
                                 <i class="bi bi-cpu-fill"></i>
                             </div>
                             <div class="project-number">04</div>
-                            <div class="project-category-badge">Artificial Intelligence</div>
+                            <div class="project-category-badge">System Monitoring</div>
                             <div class="project-overlay">
-                                <a href="#" class="overlay-btn" title="Live Demo"><i
-                                        class="bi bi-box-arrow-up-right"></i></a>
-                                <a href="#" class="overlay-btn" title="Source Code"><i class="bi bi-github"></i></a>
+                                <a href="https://github.com/afzalkhanofficial/ProcSight" class="overlay-btn"
+                                    target="_blank" title="Live Demo"><i class="bi bi-box-arrow-up-right"></i></a>
+                                <a href="https://github.com/afzalkhanofficial/ProcSight" class="overlay-btn"
+                                    target="_blank" title="Source Code"><i class="bi bi-github"></i></a>
                             </div>
                         </div>
                         <div class="project-info">
                             <div class="project-info-top">
-                                <h4 class="project-title">NeuraBase — Multi-Modal RAG</h4>
+                                <h4 class="project-title">ProcSight</h4>
                                 <div class="project-status"><span class="status-dot live"></span>Live</div>
                             </div>
-                            <p class="project-desc">Enterprise knowledge base with multi-modal Retrieval-Augmented
-                                Generation — query PDFs, images & code with LLMs using vector embeddings & re-ranking.
+                            <p class="project-desc">A real-time system monitoring dashboard built using
+                                Python and PyQt5. It provides a dynamic graphical interface for monitoring system
+                                performance and managing running processes with ease.
                             </p>
                             <div class="project-tags">
-                                <span>LangChain</span><span>OpenAI</span><span>Pinecone</span><span>FastAPI</span>
+                                <span>Python</span><span>PyQt5</span><span>System Monitoring</span><span>Process
+                                    Management</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Project 5 — NLP -->
+                <!-- Project 5 — Machine Learning -->
                 <div class="col-lg-4 col-md-6 project-item animate-on-scroll" data-project-category="aiml">
                     <div class="project-card">
                         <div class="project-card-glow"></div>
                         <div class="project-image">
-                            <div class="project-image-placeholder" style="--ph-hue: 310;">
-                                <i class="bi bi-chat-left-text-fill"></i>
+                            <div class="project-image-placeholder" style="--ph-hue: 160;">
+                                <i class="bi bi-heart-pulse-fill"></i>
                             </div>
                             <div class="project-number">05</div>
-                            <div class="project-category-badge">NLP</div>
+                            <div class="project-category-badge">Machine Learning</div>
                             <div class="project-overlay">
-                                <a href="#" class="overlay-btn" title="Live Demo"><i
+                                <a href="https://afzalkhanofficial.github.io/Marine-Oil-Spill-Detection/"
+                                    class="overlay-btn" target="_blank" title="Live Demo"><i
                                         class="bi bi-box-arrow-up-right"></i></a>
-                                <a href="#" class="overlay-btn" title="Source Code"><i class="bi bi-github"></i></a>
+                                <a href="https://github.com/afzalkhanofficial/Marine-Oil-Spill-Detection"
+                                    class="overlay-btn" target="_blank" title="Source Code"><i
+                                        class="bi bi-github"></i></a>
                             </div>
                         </div>
                         <div class="project-info">
                             <div class="project-info-top">
-                                <h4 class="project-title">CodeLens — Review Copilot</h4>
-                                <div class="project-status"><span class="status-dot wip"></span>WIP</div>
+                                <h4 class="project-title">Marine Oil Spill Detection</h4>
+                                <div class="project-status"><span class="status-dot live"></span>Live</div>
                             </div>
-                            <p class="project-desc">Multilingual code-review copilot that auto-generates PR summaries,
-                                detects anti-patterns, and suggests refactors using fine-tuned CodeLlama + BERT.</p>
+                            <p class="project-desc">Marine Oil Spill Detection using RF and SVM ML model.</p>
                             <div class="project-tags">
-                                <span>Transformers</span><span>PyTorch</span><span>HuggingFace</span><span>Docker</span>
+                                <span>Python</span><span>Random Forest</span><span>SVM</span><span>Flask</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Project 6 — Python Full Stack -->
+                <!-- Project 6 — MERN Stack -->
                 <div class="col-lg-4 col-md-6 project-item animate-on-scroll" data-project-category="web">
                     <div class="project-card">
                         <div class="project-card-glow"></div>
@@ -778,22 +1091,23 @@
                                 <i class="bi bi-graph-up-arrow"></i>
                             </div>
                             <div class="project-number">06</div>
-                            <div class="project-category-badge">Python Full Stack</div>
+                            <div class="project-category-badge">MERN Stack</div>
                             <div class="project-overlay">
-                                <a href="#" class="overlay-btn" title="Live Demo"><i
-                                        class="bi bi-box-arrow-up-right"></i></a>
-                                <a href="#" class="overlay-btn" title="Source Code"><i class="bi bi-github"></i></a>
+                                <a href="https://myainexus.netlify.app/" class="overlay-btn" target="_blank"
+                                    title="Live Demo"><i class="bi bi-box-arrow-up-right"></i></a>
+                                <a href="https://github.com/afzalkhanofficial/API-Nexus" class="overlay-btn"
+                                    target="_blank" title="Source Code"><i class="bi bi-github"></i></a>
                             </div>
                         </div>
                         <div class="project-info">
                             <div class="project-info-top">
-                                <h4 class="project-title">QuantFolio — Portfolio Optimizer</h4>
+                                <h4 class="project-title">API Nexus</h4>
                                 <div class="project-status"><span class="status-dot live"></span>Live</div>
                             </div>
-                            <p class="project-desc">AI-powered financial portfolio optimizer using Modern Portfolio
-                                Theory, Monte Carlo simulations, and sentiment analysis from real-time market feeds.</p>
+                            <p class="project-desc">A modern React web application built to showcase the power and
+                                versatility of integrating multiple third-party APIs.</p>
                             <div class="project-tags">
-                                <span>Django</span><span>PostgreSQL</span><span>Celery</span><span>React</span>
+                                <span>React</span><span>HTML5</span><span>CSS3</span><span>JavaScript</span>
                             </div>
                         </div>
                     </div>
@@ -814,7 +1128,7 @@
         <div class="container">
             <div class="section-header text-center animate-on-scroll">
                 <span class="section-tag"><i class="bi bi-briefcase-fill me-2"></i>Experience</span>
-                <h2 class="section-title">My Internship <span class="gradient-text">Journey</span></h2>
+                <h2 class="section-title">My Professional <span class="gradient-text">Journey</span></h2>
                 <div class="section-divider"></div>
                 <p class="experience-section-desc mt-3">
                     Hands-on experience across design, development, and AI —
@@ -823,7 +1137,7 @@
             </div>
 
             <div class="timeline mt-5">
-                <!-- Internship 1 — UI/UX Designer -->
+                <!-- Experience 1 — UI/UX Designer -->
                 <div class="timeline-item animate-on-scroll">
                     <div class="timeline-dot timeline-dot-coral">
                         <div class="timeline-dot-ring"></div>
@@ -841,7 +1155,7 @@
                             <div class="timeline-details">
                                 <span class="timeline-type"><i class="bi bi-suitcase-lg me-1"></i>Internship</span>
                                 <h4 class="timeline-title">UI/UX Design Intern</h4>
-                                <h5 class="timeline-company">Designboat UI/UX School</h5>
+                                <h5 class="timeline-company">Woject Technologies</h5>
                                 <p class="timeline-desc">Designed user flows, wireframes, and high-fidelity prototypes
                                     for a SaaS analytics dashboard. Conducted usability testing with 50+ users,
                                     improving task completion rate by 35%.</p>
@@ -868,12 +1182,12 @@
                     </div>
                 </div>
 
-                <!-- Internship 2 — MERN Stack Developer -->
+                <!-- Experience 2 — Infosys Springboard -->
                 <div class="timeline-item animate-on-scroll">
                     <div class="timeline-dot timeline-dot-teal"></div>
                     <div class="timeline-content timeline-card-teal">
                         <div class="timeline-header">
-                            <span class="timeline-date"><i class="bi bi-calendar3 me-2"></i>Jan 2025 - Apr 2025</span>
+                            <span class="timeline-date"><i class="bi bi-calendar3 me-2"></i>Nov 2025 - Jan 2026</span>
                         </div>
                         <div class="timeline-body">
                             <div class="timeline-company-logo"
@@ -882,61 +1196,214 @@
                             </div>
                             <div class="timeline-details">
                                 <span class="timeline-type"><i class="bi bi-suitcase-lg me-1"></i>Internship</span>
-                                <h4 class="timeline-title">MERN Stack Developer Intern</h4>
-                                <h5 class="timeline-company">Cuvette Tech</h5>
-                                <p class="timeline-desc">Built end-to-end features for a job portal platform — real-time
-                                    notifications via WebSockets, RESTful APIs with JWT auth, and a React admin
-                                    dashboard handling 10K+ daily active users.</p>
+                                <h4 class="timeline-title">Full Stack Developer</h4>
+                                <h5 class="timeline-company">Infosys Springboard</h5>
+                                <p class="timeline-desc">Developed scalable full stack web applications using MERN stack
+                                    for real client-based problems. Mastered the Software Development Life Cycle (SDLC)
+                                    and took primary Backend / Frontend responsibility in a 5-member team.</p>
                                 <div class="timeline-highlights">
                                     <div class="timeline-highlight">
-                                        <span class="highlight-value">10K+</span>
-                                        <span class="highlight-label">Daily Users</span>
+                                        <span class="highlight-value">5+</span>
+                                        <span class="highlight-label">Team Members</span>
                                     </div>
                                     <div class="timeline-highlight">
-                                        <span class="highlight-value">15</span>
-                                        <span class="highlight-label">APIs Built</span>
+                                        <span class="highlight-value">MERN</span>
+                                        <span class="highlight-label">Stack</span>
+                                    </div>
+                                    <div class="timeline-highlight">
+                                        <span class="highlight-value">SDLC</span>
+                                        <span class="highlight-label">Mastered</span>
+                                    </div>
+                                    <div class="timeline-highlight">
+                                        <span class="highlight-value">Client</span>
+                                        <span class="highlight-label">Projects</span>
                                     </div>
                                 </div>
                                 <div class="timeline-tags">
-                                    <span>React</span><span>Node.js</span><span>MongoDB</span><span>Express</span>
+                                    <span>React</span><span>Node.js</span><span>MongoDB</span><span>SDLC</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Internship 3 — AI/ML Intern -->
+                <!-- Experience 3 — Finenotes4u -->
                 <div class="timeline-item animate-on-scroll">
                     <div class="timeline-dot timeline-dot-purple"></div>
                     <div class="timeline-content timeline-card-purple">
                         <div class="timeline-header">
-                            <span class="timeline-date"><i class="bi bi-calendar3 me-2"></i>Jul 2024 - Dec 2024</span>
+                            <span class="timeline-date"><i class="bi bi-calendar3 me-2"></i>Oct 2018 - Jun 2025</span>
                         </div>
                         <div class="timeline-body">
                             <div class="timeline-company-logo"
                                 style="background: rgba(108, 99, 255, 0.12); color: #6c63ff;">
-                                <i class="bi bi-cpu-fill"></i>
+                                <i class="bi bi-globe"></i>
                             </div>
                             <div class="timeline-details">
-                                <span class="timeline-type"><i class="bi bi-suitcase-lg me-1"></i>Internship</span>
-                                <h4 class="timeline-title">AI/ML Research Intern</h4>
-                                <h5 class="timeline-company">IIT Research Lab</h5>
-                                <p class="timeline-desc">Developed a multi-modal sentiment analysis pipeline combining
-                                    NLP and computer vision. Fine-tuned BERT and ResNet models achieving 91% F1-score on
-                                    a custom dataset of 25K samples.</p>
+                                <span class="timeline-type"><i class="bi bi-suitcase-lg me-1"></i>Founder</span>
+                                <h4 class="timeline-title">Founder, Developer & Content Creator</h4>
+                                <h5 class="timeline-company">Finenotes4u</h5>
+                                <p class="timeline-desc">Built and managed a student-focused web application,
+                                    implementing Google AdSense for revenue generation. Applied robust Search Engine
+                                    Optimization (SEO) strategies to improve website visibility and organically boost
+                                    traffic.</p>
                                 <div class="timeline-highlights">
                                     <div class="timeline-highlight">
-                                        <span class="highlight-value">91%</span>
-                                        <span class="highlight-label">F1 Score</span>
+                                        <span class="highlight-value">Growth</span>
+                                        <span class="highlight-label">SEO Traffic</span>
                                     </div>
                                     <div class="timeline-highlight">
-                                        <span class="highlight-value">25K</span>
-                                        <span class="highlight-label">Dataset</span>
+                                        <span class="highlight-value">AdSense</span>
+                                        <span class="highlight-label">Monetized</span>
+                                    </div>
+                                    <div class="timeline-highlight">
+                                        <span class="highlight-value">7+</span>
+                                        <span class="highlight-label">Years</span>
+                                    </div>
+                                    <div class="timeline-highlight">
+                                        <span class="highlight-value">Content</span>
+                                        <span class="highlight-label">Creator</span>
                                     </div>
                                 </div>
                                 <div class="timeline-tags">
-                                    <span>PyTorch</span><span>Transformers</span><span>OpenCV</span><span>Python</span>
+                                    <span>HTML/CSS</span><span>JS</span><span>Tailwind</span><span>UI/UX</span><span>Canva</span>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== EDUCATION SECTION ========== -->
+    <section id="education" class="section-padding education-section-enhanced">
+        <div class="education-bg-shapes">
+            <div class="education-shape education-shape-1"></div>
+            <div class="education-shape education-shape-2"></div>
+        </div>
+        <div class="container">
+            <div class="section-header text-center animate-on-scroll">
+                <span class="section-tag"><i class="bi bi-mortarboard-fill me-2"></i>Education</span>
+                <h2 class="section-title">My Academic <span class="gradient-text">Background</span></h2>
+                <div class="section-divider"></div>
+                <p class="education-section-desc mt-3">
+                    A record of my academic journey and specialized training.
+                </p>
+            </div>
+
+            <div class="row g-4 mt-5">
+                <!-- Education 1 -->
+                <div class="col-lg-4 col-md-6 animate-on-scroll">
+                    <div class="education-card">
+                        <div class="education-card-glow"></div>
+                        <div class="education-card-inner">
+                            <div class="education-header-main">
+                                <div class="education-icon-wrap" style="--edu-hue: 250;">
+                                    <div class="icon-ring"></div>
+                                    <i class="bi bi-mortarboard-fill"></i>
+                                </div>
+                                <div class="education-status-tag graduating">Current</div>
+                            </div>
+                            <div class="education-content-main">
+                                <h4 class="education-title">B.Tech in Computer Science</h4>
+                                <p class="education-institute">Lovely Professional University</p>
+                                <div class="education-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-label">CGPA</span>
+                                        <span class="stat-value">7.6/10</span>
+                                    </div>
+                                    <div class="divider-v"></div>
+                                    <div class="stat-item">
+                                        <span class="stat-label">Semester</span>
+                                        <span class="stat-value">6th</span>
+                                    </div>
+                                </div>
+                                <ul class="education-features">
+                                    <li><i class="bi bi-check2-circle"></i> Specializing in AI & ML</li>
+                                    <li><i class="bi bi-check2-circle"></i> Hackathon Winner 2024</li>
+                                </ul>
+                            </div>
+                            <div class="education-footer">
+                                <span class="education-year"><i class="bi bi-calendar3"></i> 2023 — 2027</span>
+                                <div class="education-location"><i class="bi bi-geo-alt"></i> India</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Education 2 -->
+                <div class="col-lg-4 col-md-6 animate-on-scroll">
+                    <div class="education-card">
+                        <div class="education-card-glow"></div>
+                        <div class="education-card-inner">
+                            <div class="education-header-main">
+                                <div class="education-icon-wrap" style="--edu-hue: 45;">
+                                    <div class="icon-ring"></div>
+                                    <i class="bi bi-book-half"></i>
+                                </div>
+                                <div class="education-status-tag completed">Completed</div>
+                            </div>
+                            <div class="education-content-main">
+                                <h4 class="education-title">Class 12 (Higher Secondary)</h4>
+                                <p class="education-institute">Central Board of Secondary Education</p>
+                                <div class="education-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-label">Score</span>
+                                        <span class="stat-value">71.2%</span>
+                                    </div>
+                                    <div class="divider-v"></div>
+                                    <div class="stat-item">
+                                        <span class="stat-label">Stream</span>
+                                        <span class="stat-value">Science</span>
+                                    </div>
+                                </div>
+                                <ul class="education-features">
+                                    <li><i class="bi bi-check2-circle"></i> NCC Cadet</li>
+                                    <li><i class="bi bi-check2-circle"></i> PCM</li>
+                                </ul>
+                            </div>
+                            <div class="education-footer">
+                                <span class="education-year"><i class="bi bi-calendar3"></i> 2020 — 2022</span>
+                                <div class="education-location"><i class="bi bi-geo-alt"></i> India</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Education 3 -->
+                <div class="col-lg-4 col-md-6 animate-on-scroll">
+                    <div class="education-card">
+                        <div class="education-card-glow"></div>
+                        <div class="education-card-inner">
+                            <div class="education-header-main">
+                                <div class="education-icon-wrap" style="--edu-hue: 160;">
+                                    <div class="icon-ring"></div>
+                                    <i class="bi bi-person-workspace"></i>
+                                </div>
+                                <div class="education-status-tag completed">Completed</div>
+                            </div>
+                            <div class="education-content-main">
+                                <h4 class="education-title">Class 10 (Secondary School)</h4>
+                                <p class="education-institute">Central Board of Secondary Education</p>
+                                <div class="education-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-label">Score</span>
+                                        <span class="stat-value">84.4%</span>
+                                    </div>
+                                    <div class="divider-v"></div>
+                                    <div class="stat-item">
+                                        <span class="stat-label">Rank</span>
+                                        <span class="stat-value">Top 15%</span>
+                                    </div>
+                                </div>
+                                <ul class="education-features">
+                                    <li><i class="bi bi-check2-circle"></i> NCC Cadet</li>
+                                    <li><i class="bi bi-check2-circle"></i> ISO Olympiad Qualifier
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="education-footer">
+                                <span class="education-year"><i class="bi bi-calendar3"></i> 2018 — 2020</span>
+                                <div class="education-location"><i class="bi bi-geo-alt"></i> India</div>
                             </div>
                         </div>
                     </div>
@@ -947,7 +1414,7 @@
 
 
     <!-- ========== TESTIMONIALS SECTION ========== -->
-    <section class="section-padding testimonials-section-enhanced">
+    <section class="section-padding section-alt testimonials-section-enhanced">
         <div class="testimonials-bg-shapes">
             <div class="testimonials-shape testimonials-shape-1"></div>
             <div class="testimonials-shape testimonials-shape-2"></div>
@@ -958,7 +1425,7 @@
                 <h2 class="section-title">What Supervisors <span class="gradient-text">Say</span></h2>
                 <div class="section-divider"></div>
                 <p class="testimonials-section-desc mt-3">
-                    Real feedback from supervisors I've worked with during my internships.
+                    Real feedback from supervisors, mentors, and partners I've worked with.
                 </p>
             </div>
             <div class="testimonial-slider mt-5">
@@ -993,7 +1460,7 @@
                                 </div>
                                 <div class="author-info">
                                     <h5>Ritu Sharma</h5>
-                                    <p>Lead Mentor, Designboat</p>
+                                    <p>Lead Mentor, Woject Technologies</p>
                                 </div>
                             </div>
                         </div>
@@ -1018,20 +1485,20 @@
                                 <span class="stars-score">5.0</span>
                             </div>
                             <p class="testimonial-text">
-                                "Afzal single-handedly built our real-time notification system and admin dashboard
-                                handling 10K+ users. His code quality, speed, and ownership mindset are on par with
-                                senior developers. A standout intern."
+                                "Afzal's command over the MERN stack and agile SDLC was remarkable. He took primary
+                                ownership of key full stack responsibilities for our client-based problem, delivering
+                                a scalable web application. A stellar team player."
                             </p>
                             <div class="testimonial-project-tag">
-                                <i class="bi bi-link-45deg me-1"></i>Job Portal Platform
+                                <i class="bi bi-link-45deg me-1"></i>Client-Based Project
                             </div>
                             <div class="testimonial-author">
                                 <div class="author-avatar" style="--avatar-hue: 160;">
-                                    <span class="author-initials">AV</span>
+                                    <span class="author-initials">AK</span>
                                 </div>
                                 <div class="author-info">
-                                    <h5>Amit Verma</h5>
-                                    <p>Engineering Lead, Cuvette Tech</p>
+                                    <h5>Arun Kumar</h5>
+                                    <p>Project Mentor, Infosys Springboard</p>
                                 </div>
                             </div>
                         </div>
@@ -1053,20 +1520,22 @@
                                 <span class="stars-score">4.8</span>
                             </div>
                             <p class="testimonial-text">
-                                "Afzal's multi-modal sentiment analysis pipeline was exceptional research work. He
-                                fine-tuned BERT and ResNet to achieve a 91% F1-score — results that contributed directly
-                                to our published paper. Highly recommended."
+                                "Afzal built an incredibly resourceful student-focused web application from the ground
+                                up.
+                                His continuous efforts in SEO and content strategy created a highly visible and valuable
+                                platform
+                                for learners. He is a truly dedicated founder and developer."
                             </p>
                             <div class="testimonial-project-tag">
-                                <i class="bi bi-link-45deg me-1"></i>Sentiment Analysis Research
+                                <i class="bi bi-link-45deg me-1"></i>Student-Focused Web App
                             </div>
                             <div class="testimonial-author">
                                 <div class="author-avatar" style="--avatar-hue: 260;">
-                                    <span class="author-initials">DP</span>
+                                    <span class="author-initials">NG</span>
                                 </div>
                                 <div class="author-info">
-                                    <h5>Dr. Priya Menon</h5>
-                                    <p>Professor, IIT Research Lab</p>
+                                    <h5>Neha Gupta</h5>
+                                    <p>Platform Partner, Finenotes4u</p>
                                 </div>
                             </div>
                         </div>
@@ -1078,7 +1547,7 @@
     </section>
 
     <!-- ========== CONTACT SECTION ========== -->
-    <section id="contact" class="section-padding section-alt contact-section-enhanced">
+    <section id="contact" class="section-padding contact-section-enhanced">
         <div class="contact-bg-shapes">
             <div class="contact-shape contact-shape-1"></div>
             <div class="contact-shape contact-shape-2"></div>
@@ -1156,20 +1625,16 @@
                         <h5 class="contact-social-title">Connect with Me</h5>
                         <div class="contact-social-links mt-3">
                             <a href="#" class="social-link-enhanced" aria-label="GitHub">
-                                <i class="bi bi-github"></i>
+                                <i class="bi bi-github" style="color: #ffffff;"></i>
                                 <span>GitHub</span>
                             </a>
                             <a href="#" class="social-link-enhanced" aria-label="LinkedIn">
-                                <i class="bi bi-linkedin"></i>
+                                <i class="bi bi-linkedin" style="color: #0a66c2;"></i>
                                 <span>LinkedIn</span>
                             </a>
-                            <a href="#" class="social-link-enhanced" aria-label="Twitter">
-                                <i class="bi bi-twitter-x"></i>
-                                <span>Twitter</span>
-                            </a>
-                            <a href="#" class="social-link-enhanced" aria-label="Instagram">
-                                <i class="bi bi-instagram"></i>
-                                <span>Instagram</span>
+                            <a href="#" class="social-link-enhanced" aria-label="Hugging Face">
+                                <i style="font-style: normal;">🤗</i>
+                                <span>Hugging Face</span>
                             </a>
                         </div>
                     </div>
@@ -1227,7 +1692,7 @@
     </section>
 
     <!-- ========== FOOTER ========== -->
-    <footer class="site-footer">
+    <footer class="site-footer section-alt">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
@@ -1237,10 +1702,9 @@
                 <p class="footer-text">Designed & Built with <i class="bi bi-heart-fill text-danger"></i> by Afzal
                     Khan</p>
                 <div class="footer-social">
-                    <a href="#" aria-label="GitHub"><i class="bi bi-github"></i></a>
-                    <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="bi bi-github" style="color: #ffffff;"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin" style="color: #0a66c2;"></i></a>
+                    <a href="#" aria-label="Hugging Face"><i style="font-style: normal;">🤗</i></a>
                 </div>
                 <p class="footer-copy">&copy; 2026 Afzal Khan. All rights reserved.</p>
             </div>

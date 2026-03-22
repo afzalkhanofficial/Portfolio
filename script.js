@@ -1,6 +1,48 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // ==================== PRELOADER DELAY ====================
-    document.body.style.opacity = '1';
+    // ==================== PRELOADER DECIPHER EFFECT ====================
+    const preloader = document.getElementById('preloader');
+    const preloaderText = document.getElementById('preloader-text');
+
+    if (preloader && preloaderText) {
+        const finalName = "AFZAL\n    KHAN";
+        const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ#%&*";
+        let iterations = 0;
+        const interval = 30;
+        const maxIterations = 33; // Total frames (33 * 30ms = ~1s)
+
+        // Randomly assign a lock iteration for each character (between 5 and maxIterations)
+        const lockThresholds = finalName.split("").map(() => Math.floor(Math.random() * (maxIterations - 5)) + 5);
+
+        document.body.style.opacity = '1';
+        document.body.style.overflow = 'hidden';
+
+        const decipherInterval = setInterval(() => {
+            preloaderText.innerText = finalName
+                .split("")
+                .map((letter, index) => {
+                    // If the current iteration passes this character's random threshold, lock it
+                    if (iterations >= lockThresholds[index]) {
+                        return finalName[index];
+                    }
+                    if (letter === " " || letter === "\n") return letter;
+                    return letters[Math.floor(Math.random() * letters.length)];
+                })
+                .join("");
+
+            iterations++;
+
+            if (iterations > maxIterations) {
+                clearInterval(decipherInterval);
+                preloaderText.innerText = finalName;
+                setTimeout(() => {
+                    preloader.classList.add('loaded');
+                    document.body.style.overflow = '';
+                }, 500); // Linger for 500ms before fading layout
+            }
+        }, interval);
+    } else {
+        document.body.style.opacity = '1';
+    }
 
     // ==================== CURSOR GLOW ====================
     const cursorGlow = document.getElementById('cursorGlow');
@@ -312,7 +354,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', updateActiveNav);
 
     // ==================== TILT EFFECT ON CARDS ====================
-    const tiltCards = document.querySelectorAll('.project-card, .testimonial-card, .certificate-card');
+    const tiltCards = document.querySelectorAll('.project-card, .testimonial-card, .certificate-card, .education-card');
 
     tiltCards.forEach(card => {
         card.addEventListener('mousemove', (e) => {
@@ -325,7 +367,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const rotateX = ((y - centerY) / centerY) * -4;
             const rotateY = ((x - centerX) / centerX) * 4;
 
-            card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-8px)`;
+            card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-10px)`;
         });
 
         card.addEventListener('mouseleave', () => {
